@@ -1,61 +1,62 @@
 "use client";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import {ReactTyped} from "react-typed";
+import { motion, AnimatePresence } from "framer-motion";
 
-import Image from "next/image"
-import Link from "next/link"
-import {ReactTyped } from "react-typed";
-import heroShape from "@/assets/img/shapes/three-round-green.png"
-import { useEffect, useState } from "react";
+const HeroSection = () => {
+  const images = [
+    "/assets/img/hero/1.jpg",
+    "/assets/img/hero/2.jpg",
+  ];
 
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-const HeroArea = () => {
-   const images = [
-      "/assets/img/hero/1.jpg",
-      "/assets/img/hero/2.jpg",
-    ];
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 4000); // Change image every 4 seconds
 
-    const [currentImage, setCurrentImage] = useState(images[0]);
+    return () => clearInterval(interval);
+  }, []);
 
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setCurrentImage((prevImage) => {
-          const currentIndex = images.indexOf(prevImage);
-          return images[(currentIndex + 1) % images.length];
-        });
-      }, 3000); // Change image every 3 seconds
-  
-      return () => clearInterval(interval);
-    }, []);
+  return (
+    <div className="hero-area-two overlay py-250 relative overflow-hidden">
+      <div className="absolute inset-0">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentImageIndex}
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+            // initial={{ x: "-100%", scale: 1 }}
+            animate={{ x: "100%", scale: 1.1 }}
+            // exit={{ x: "100%", scale: 1 }}
+            transition={{ duration: 1 }}
+          />
+        </AnimatePresence>
+      </div>
 
-
-   return (
-      <div
-      className="hero-area-two bgs-cover overlay py-250"
-      style={{
-        backgroundImage: `url(${currentImage})`,
-        transition: "background-image 1s ease-in-out",
-      }}
-    >
-      <div className="container">
-        <div className="hero-content mt-110 rmt-0 mb-65 text-center text-white rel z-1">
-                    {/* Auto-writing text effect */}
-                    <h6>Welcome To:</h6>
+      <div className="container relative z-10 text-center text-white">
+        <div className="hero-content mt-110 rmt-0 mb-65">
           <h1>
-            <ReactTyped 
-              strings={["first", "second"]}
-              typeSpeed={5} // Typing speed
-              backSpeed={5} // Backspacing speed
+            <ReactTyped
+              strings={["We are Non-Profit & NGO Organization"]}
+              typeSpeed={50}
+              backSpeed={30}
               loop
             />
-            </h1>
+          </h1>
 
           <div className="hero-btns pt-15 rpt-0">
             <Link className="cr-btn" href="#">
               Donate Now
             </Link>
           </div>
+
           <Image
             className="hero-shape-two top_image_bounce"
-            src={heroShape}
+            src="/assets/img/hero/shape.png"
             alt="Shape"
             width={100}
             height={100}
@@ -63,7 +64,7 @@ const HeroArea = () => {
         </div>
       </div>
     </div>
-   )
-}
+  );
+};
 
-export default HeroArea
+export default HeroSection;
