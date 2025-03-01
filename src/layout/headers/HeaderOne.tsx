@@ -7,7 +7,7 @@ import HeaderSearch from "./Menu/HeaderSearch"
 import UseSticky from "@/hooks/UseSticky"
 import HeaderTop from "./Menu/HeaderTop"
 
-import HeaderLogo_1 from "@/assets/img/logos/logo.png";
+import logo from "@/assets/img/logos/LOGO bien.png";
 import HeaderLogo_2 from "@/assets/img/logos/logo-white.png";
 
 const HeaderOne = ({ style_1, style_2 }: any) => {
@@ -37,8 +37,8 @@ const HeaderOne = ({ style_1, style_2 }: any) => {
                      <span className="icon-right"></span>
                   </button>
                </div>
-               <div className="logo">
-                  <Link href="/"><Image src={style_2 ? HeaderLogo_2 : HeaderLogo_1} alt="img" /></Link>
+               <div className="logo" >
+                  <Link href="/"><Image src={logo} alt="img" style={{height: "30px"}}/></Link>
                </div>
                <div className="nav-right-part nav-right-part-mobile">
                   <a style={{ cursor: "pointer" }} className="search-bar-btn">
