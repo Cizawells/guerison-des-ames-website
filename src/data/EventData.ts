@@ -39,54 +39,7 @@ interface DataType {
 }
 
 const event_data: DataType[] = [
-   {
-      id: 1,
-      page:"home_1",
-      thumb: eventThumb_1,
-      title: "Free Medical Camping",
-      date: "Jan 18, 2013",
-      city: "melbourne City",
-   },
-   {
-      id: 2,
-      page:"home_1",
-      thumb: eventThumb_2,
-      title: "Free Medical Camping",
-      date: "Jan 18, 2014",
-      city: "melbourne City",
-   },
-   {
-      id: 3,
-      page:"home_1",
-      thumb: eventThumb_3,
-      title: "Free Medical Camping",
-      date: "Jan 18, 2015",
-      city: "melbourne City",
-   },
-   {
-      id: 4,
-      page:"home_1",
-      thumb: eventThumb_4,
-      title: "Free Medical Camping",
-      date: "Jan 18, 2016",
-      city: "melbourne City",
-   },
-   {
-      id: 5,
-      page:"home_1",
-      thumb: eventThumb_5,
-      title: "Free Medical Camping",
-      date: "Jan 18, 2013",
-      city: "melbourne City",
-   },
-   {
-      id: 6,
-      page:"home_1",
-      thumb: eventThumb_6,
-      title: "Free Medical Camping",
-      date: "Jan 18, 2016",
-      city: "melbourne City",
-   },
+
 
    // home two
 
@@ -94,8 +47,8 @@ const event_data: DataType[] = [
       id: 1,
       page:"home_2",
       thumb: event2Thumb_1,
-      title: "Food For Hunger",
-      time: "Sunday, 08:00am",
+      title: "morning worship",
+      time: "Monday - Friday, 06:00am - 08:00am",
       city: "melbourne City",
       date:25,
    },
@@ -103,8 +56,8 @@ const event_data: DataType[] = [
       id: 2,
       page:"home_2",
       thumb: event2Thumb_2,
-      title: "Adopt a Orphan Child",
-      time: "Friday, 10:00am",
+      title: "Youth service",
+      time: "Tuesday, 5pm - 7pm",
       city: "Kinchiden, USA",
       date:28,
       item_bg:"event-two-item--green"
@@ -113,8 +66,8 @@ const event_data: DataType[] = [
       id: 3,
       page:"home_2",
       thumb: event2Thumb_3,
-      title: "Clean Water Event",
-      time: "Monday, 02:00pm",
+      title: "Women service",
+      time: "Wednesday, 5pm - 7pm",
       city: "Old City london",
       date:30,
       item_bg:"event-two-item--yellow"
@@ -123,53 +76,33 @@ const event_data: DataType[] = [
       id: 4,
       page:"home_2",
       thumb: event2Thumb_4,
-      title: "Education For Children",
-      time: "Satday, 09:00pm",
+      title: "Praise and worship",
+      time: "Thursday, 5pm - pm",
+      city: "Mownten City",
+      date:31,
+   },
+   {
+      id: 5,
+      page:"home_2",
+      thumb: event2Thumb_4,
+      title: "Day of prayer",
+      time: "Friday, 9am - 5pm",
+      city: "Mownten City",
+      date:31,
+   },
+   {
+      id: 6,
+      page:"home_2",
+      thumb: event2Thumb_4,
+      title: "Sunday Service",
+      time: "Sunday, 9am - 12am",
       city: "Mownten City",
       date:31,
    },
 
    // home three
 
-   {
-      id: 1,
-      page:"home_3",
-      thumb: event3Thumb_1,
-      title: "Clean Water Event",
-      time: "Jan 18, 2013",
-      city: "Mownten City",
-      desc:"Children face tough challenges: hunger amalnutrition, limited access to education and medical consectetur adipisci. Vivamus in magna",
-   },
-   {
-      id: 2,
-      page:"home_3",
-      thumb: event3Thumb_2,
-      title: "Food For Hunger",
-      time: "Jan 20, 2015",
-      city: "Mownten City",
-      desc:"Children face tough challenges: hunger amalnutrition, limited access to education and medical consectetur adipisci. Vivamus in magna",
-      item_bg:"item--green",
-   },
-   {
-      id: 3,
-      page:"home_3",
-      thumb: event3Thumb_3,
-      title: "Adopt a Orphan Child",
-      time: "Jan 22, 2015",
-      city: "Mownten City",
-      desc:"Children face tough challenges: hunger amalnutrition, limited access to education and medical consectetur adipisci. Vivamus in magna",
-      item_bg:"item--yellow",
-   },
-   {
-      id: 4,
-      page:"home_3",
-      thumb: event3Thumb_2,
-      title: "Food For Hunger",
-      time: "Jan 20, 2015",
-      city: "Mownten City",
-      desc:"Children face tough challenges: hunger amalnutrition, limited access to education and medical consectetur adipisci. Vivamus in magna",
-      item_bg:"item--green",
-   },
+
 
    // inner page
    

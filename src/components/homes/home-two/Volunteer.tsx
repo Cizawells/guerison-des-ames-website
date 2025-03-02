@@ -5,7 +5,7 @@ const Volunteer = ({ style }: any) => {
 
    const filteredVolunteers = volunteer_data
       .filter((item) => item.page === "home_2")
-      .slice(0, style ? 4 : 8);
+      // .slice(0, style ? 4 : 8);
 
    return (
       <div className={`volunteer-area-two pb-90 rel z-1 ${style ? "pt-120" : ""}`}>
@@ -13,9 +13,9 @@ const Volunteer = ({ style }: any) => {
             <div className="row justify-content-center">
                <div className="col-xl-6 col-lg-8 col-md-10">
                   <div className="section-title text-center mb-60">
-                     <span className="section-title__subtitle mb-10">Our Volunteers</span>
-                     {style ? <h3>Meet <span>With Volunteers</span></h3> : <h2>Our <span>Volunteers</span> Style 02</h2>}
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati consectetur adipisicing</p>
+                     <span className="section-title__subtitle mb-10">Our Pastors</span>
+                     {style ? <h3>Meet <span>With Pastors</span></h3> : <h2>Our <span>Pastors</span> Style 02</h2>}
+                     {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati consectetur adipisicing</p> */}
                   </div>
                </div>
             </div>
@@ -24,12 +24,12 @@ const Volunteer = ({ style }: any) => {
                {filteredVolunteers.map((item) => (
                   <div key={item.id} className="col-xl-3 col-sm-6">
                      <div className="valunteer-two-item">
-                        <div className="valunteer-two-item__img">
-                           <Image src={item.thumb} alt="Volunteer" />
+                        <div className="valunteer-two-item__img" style={{width: "300px", height: "270px"}}>
+                           <Image src={item.thumb} alt="Volunteer" style={{width: "100%", height: "100%"}}/>
                         </div>
                         <div className={`valunteer-two-item__des ${item.item_bg}`}>
                            <h5>{item.name}</h5>
-                           <span>volunteer</span>
+                           <span>{item.title}</span>
                         </div>
                      </div>
                   </div>

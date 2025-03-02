@@ -14,6 +14,7 @@ import FAQ from "./FAQ"
 import Blog from "../home-one/Blog"
 import Brand from "@/components/common/Brand"
 import FooterTwo from "@/layout/footers/FooterTwo"
+import ChooseArea from "./ChooseArea"
 
 const HomeTwo = () => {
   return (
@@ -21,19 +22,21 @@ const HomeTwo = () => {
       <HeaderOne style_1={true} style_2={false} />
       <main>
         <HeroArea />
-        <Features style={false} />
-        <UrgentCause />
-        <About />
-        <OurCause />
-        <Counter />
-        <Event />
-        <BecomeVolunteer/>
+        <ChooseArea />
+        {/* <Features style={true} /> */}
+        {/* <UrgentCause /> */}
+        {/* <About /> */}
+        {/* <OurCause /> */}
+        {/* <Counter /> */}
         <Volunteer style={true} />
-        <Testimonial style={false} />
-        <CtaArea />
+
+        <Event />
+        {/* <BecomeVolunteer/> */}
+        <Testimonial style={true} />
+        {/* <CtaArea /> */}
         <FAQ />
-        <Blog style={true} />
-        <Brand style={false} />
+        {/* <Blog style={true} /> */}
+        {/* <Brand style={false} /> */}
       </main>
       <FooterTwo/>
     </>
