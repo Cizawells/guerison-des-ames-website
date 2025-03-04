@@ -14,8 +14,8 @@ const menu_data: MenuItem[] = [
 
     {
         id: 2,
-        has_dropdown: true,
-        title: "Causes",
+        has_dropdown: false,
+        title: "About us",
         link: "#",
         sub_menus: [
             { link: "/causes", title: "Causes" },
