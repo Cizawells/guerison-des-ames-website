@@ -34,8 +34,8 @@ const ChooseArea = () => {
                   <div className="col-lg-6">
                      <div className="why-choose-content text-white rmb-65">
                         <div className="section-title mb-60">
-                           <span className="section-title__subtitle mb-10">Why Choose Us</span>
-                           <h2>Trusted non profit donation <span>center</span></h2>
+                           {/* <span className="section-title__subtitle mb-10">Why Choose Us</span> */}
+                           <h2>Eglise Messianique pour la <span>Guerison des ames</span></h2>
                         </div>
 
                         <div className="vission-mission-tab">
