@@ -18,7 +18,7 @@ const HeroSection = () => {
     }, 7000); // Change background every 7 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <section className="relative w-full h-screen overflow-hidden">

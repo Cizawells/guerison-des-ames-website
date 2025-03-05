@@ -11,7 +11,6 @@ import Volunteer from "./Volunteer"
 import Testimonial from "./Testimonial"
 import CtaArea from "./CtaArea"
 import FAQ from "./FAQ"
-import Blog from "../home-one/Blog"
 import Brand from "@/components/common/Brand"
 import FooterTwo from "@/layout/footers/FooterTwo"
 import ChooseArea from "./ChooseArea"
@@ -35,7 +34,6 @@ const HomeTwo = () => {
         <Testimonial style={true} />
         {/* <CtaArea /> */}
         <FAQ />
-        {/* <Blog style={true} /> */}
         {/* <Brand style={false} /> */}
       </main>
       <FooterTwo/>

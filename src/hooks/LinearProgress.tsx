@@ -31,7 +31,7 @@ const LinearProgress = ({
         observer.unobserve(progressRef.current);
       }
     };
-  }, []);
+  }, [progressRef.current]);
 
   useEffect(() => {
     if (isInViewport && percentage <= finish) {

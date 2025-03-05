@@ -37,7 +37,7 @@ const ScrollToTop = () => {
 
       window.addEventListener("scroll", checkScrollTop);
       return () => window.removeEventListener("scroll", checkScrollTop);
-   }, [checkScrollTop]);
+   }, [checkScrollTop, showScroll]);
 
    return (
       <>
