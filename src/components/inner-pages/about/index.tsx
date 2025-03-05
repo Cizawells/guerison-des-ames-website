@@ -12,16 +12,16 @@ import FAQ from "@/components/homes/home-one/FAQ"
 const InnerAbout = () => {
    return (
       <>
-         <HeaderOne style_1={false} style_2={false} />
+         <HeaderOne style_1={true} style_2={false} />
          <main>
-            <Breadcrumb page_title="About Us" page_list="About" style={false} />
-            <Brand style={true} />
+            <Breadcrumb page_title="About Us" page_list="About" style={true} />
+            {/* <Brand style={true} /> */}
             <About />
-            <Features />
-            <Volunteer style={true} />
-            <Testimonial style={false} />
-            <CtaArea />
-            <FAQ />
+            {/* <Features /> */}
+            {/* <Volunteer style={true} /> */}
+            {/* <Testimonial style={false} /> */}
+            {/* <CtaArea /> */}
+            {/* <FAQ /> */}
          </main>
          <FooterOne />
       </>

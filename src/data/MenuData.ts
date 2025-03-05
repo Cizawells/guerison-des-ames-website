@@ -16,7 +16,7 @@ const menu_data: MenuItem[] = [
         id: 2,
         has_dropdown: false,
         title: "About us",
-        link: "#",
+        link: "/about",
         sub_menus: [
             { link: "/causes", title: "Causes" },
             { link: "/causes-slider", title: "Causes Slider" },

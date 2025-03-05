@@ -49,10 +49,14 @@ const About = () => {
                <div className="col-lg-6">
                   <div className="about-content-part rmt-65">
                      <div className="section-title mb-60">
-                        <span className="section-title__subtitle mb-10">About us</span>
+                        {/* <span className="section-title__subtitle mb-10">About us</span> */}
                         <h2>Check what makes us different <span>than others</span></h2>
                      </div>
-                     <p>There are many variations of passages of orem Ipsum available, but the majority have suffered alteration in some form, by cted ipsum dolor sit amet, consectetur adipisicing elit, sed do usmod mponcid idunt ut labore et dolore magna aliqua.</p>
+                     <p>The name "Messianic Church for the Healing of Souls" (EMGA) was chosen in reference to the "Souls Healing Ministry", under which the church operated for two years before receiving official recognition. It was also selected in response to the deep wounds suffered by people due to the multiple atrocities caused by war in the region, including Burundi, Rwanda, and the Democratic Republic of Congo.
+
+All the founding members agreed that only God could heal such wounds. They believed that this meaningful name could bring together people who had suffered greatly and were seeking divine healing. To distinguish between the ministry and the church, the word "Messianic" was added to emphasize that only the Messiah can bring true healing from these wounds.
+
+With this in mind, the vision and mission of the church revolve around the healing of souls, so that those who have lost everything—their loved ones, their possessions—and who have been displaced within or outside their countries may live together as brothers and sisters. The church seeks to support widows and orphans and to share everything in the same spirit as the first Christians described in the Bible: Acts 2:43–47.</p>
                      {counter_data.filter((item) => item.page === "home_1").map((item) => (
                         <div key={item.id} className="counter-item counter-text-wrap">
                            <div className={`counter-item__icon ${item.icon_bg}`}><i className={item.icon}></i></div>
