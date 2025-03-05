@@ -29,7 +29,7 @@ import eventInnerThumb_9 from "@/assets/img/events/event-three9.jpg";
 interface DataType {
    id: number;
    page:string;
-   thumb: StaticImageData;
+   thumb: StaticImageData | string;
    title: string;
    date?: string | number;
    city: string;
@@ -46,7 +46,7 @@ const event_data: DataType[] = [
    {
       id: 1,
       page:"home_2",
-      thumb: event2Thumb_1,
+      thumb: "/assets/img/events/1.jpg",
       title: "morning worship",
       time: "Monday - Friday, 06:00am - 08:00am",
       city: "melbourne City",
@@ -55,7 +55,7 @@ const event_data: DataType[] = [
    {
       id: 2,
       page:"home_2",
-      thumb: event2Thumb_2,
+      thumb: "/assets/img/events/2.jpg",
       title: "Youth service",
       time: "Tuesday, 5pm - 7pm",
       city: "Kinchiden, USA",
@@ -65,7 +65,7 @@ const event_data: DataType[] = [
    {
       id: 3,
       page:"home_2",
-      thumb: event2Thumb_3,
+      thumb: "/assets/img/events/3.jpg",
       title: "Women service",
       time: "Wednesday, 5pm - 7pm",
       city: "Old City london",
@@ -75,7 +75,7 @@ const event_data: DataType[] = [
    {
       id: 4,
       page:"home_2",
-      thumb: event2Thumb_4,
+      thumb: "/assets/img/events/4.jpg",
       title: "Praise and worship",
       time: "Thursday, 5pm - pm",
       city: "Mownten City",
@@ -84,7 +84,7 @@ const event_data: DataType[] = [
    {
       id: 5,
       page:"home_2",
-      thumb: event2Thumb_4,
+      thumb: "/assets/img/events/4.jpg",
       title: "Day of prayer",
       time: "Friday, 9am - 5pm",
       city: "Mownten City",
@@ -93,7 +93,7 @@ const event_data: DataType[] = [
    {
       id: 6,
       page:"home_2",
-      thumb: event2Thumb_4,
+      thumb: "/assets/img/events/4.jpg",
       title: "Sunday Service",
       time: "Sunday, 9am - 12am",
       city: "Mownten City",

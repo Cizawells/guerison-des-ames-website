@@ -20,7 +20,7 @@ const Event = () => {
                   <div key={item.id} className="col-lg-6">
                      <div className={`event-two-item ${item.item_bg}`}>
                         <div className="image">
-                           <Image src={item.thumb} alt="Event" />
+                           <Image src={item.thumb} alt="Event" width={150} height={150}/>
                         </div>
                         <div className="content">
                            <h5><Link href="/event-details">{item.title}</Link></h5>
