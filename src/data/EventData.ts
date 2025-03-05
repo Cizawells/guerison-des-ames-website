@@ -7,10 +7,7 @@ import eventThumb_4 from "@/assets/img/events/event4.jpg";
 import eventThumb_5 from "@/assets/img/events/event5.jpg";
 import eventThumb_6 from "@/assets/img/events/event6.jpg";
 
-import event2Thumb_1 from "@/assets/img/events/1.jpg";
-import event2Thumb_2 from "@/assets/img/events/2.jpg";
-import event2Thumb_3 from "@/assets/img/events/3.jpg";
-import event2Thumb_4 from "@/assets/img/events/4.jpg";
+
 
 import event3Thumb_1 from "@/assets/img/events/event-three1.jpg";
 import event3Thumb_2 from "@/assets/img/events/event-three2.jpg";
