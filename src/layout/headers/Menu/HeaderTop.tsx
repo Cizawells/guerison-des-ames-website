@@ -8,8 +8,8 @@ const HeaderTop = ({ style }: any) => {
                <ul className="topbar-left">
                   {style ?
                      <>
-                        <li><b>Call now - <Link href="callto:333-444555">333 - 444 555</Link></b></li>
-                        <li>Shiloh, Hawaii 81063</li>
+                        <li><b>Shalom - <Link href="callto:333-444555">68554444</Link></b></li>
+                        <li>Bujumbura, Nyagakabiga</li>
                      </> :
                      <>
                         <li><span>HI</span>, Good Afternoon Dude! </li>

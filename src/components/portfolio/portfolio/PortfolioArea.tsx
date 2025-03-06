@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-const tab_title: string[] = ["All", "Homeless", "Clean Water", "Education", "Food & Health"];
+const tab_title: string[] = ["All", "Worship", "Preaching", "Children", "Audience"];
 const portfolioCounts: number[] = [portfolio_data.length, 2, 5, 3, 3];
 
 const PortfolioArea = () => {
@@ -19,7 +19,7 @@ const PortfolioArea = () => {
     return portfolio_data.slice(0, endIndex).map((item) => (
       <div key={item.id} className="col-xl-4 col-md-6 item cleanWater foodHealth">
         <div className="portfolio-item image">
-          <Image src={item.thumb} alt="Portfolio" />
+          <Image src={item.thumb} alt="Portfolio" width={300} height={300}/>
           <div className="portfolio-item__over">
             <a className="details-btn" href="portfolio-details.html">
               <i className="flaticon-chevron"></i>

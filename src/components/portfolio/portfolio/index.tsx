@@ -9,13 +9,13 @@ import PortfolioArea from "./PortfolioArea"
 const Portfolio = () => {
    return (
       <>
-         <HeaderOne style_1={false} style_2={false} />
+         <HeaderOne style_1={true} style_2={false} />
          <main>
-            <Breadcrumb page_title="Our Recent Work" page_list="Portfolio" style={false} />
+            <Breadcrumb page_title="Our Gallery" page_list="Portfolio" style={false} />
             <PortfolioArea />
             <ChooseArea />
-            <Testimonial />
-            <FAQ style={true} />
+            {/* <Testimonial /> */}
+            {/* <FAQ style={true} /> */}
          </main>
          <FooterOne />
       </>
