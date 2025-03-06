@@ -14,8 +14,8 @@ const InnerAbout = () => {
       <>
          <HeaderOne style_1={true} style_2={false} />
          <main>
-            {/* <Breadcrumb page_title="About Us" page_list="About" style={true} /> */}
-            <Brand style={true} />
+            <Breadcrumb page_title="About Us" page_list="About" style={true} />
+            {/* <Brand style={true} /> */}
             <About />
             {/* <Features /> */}
             {/* <Volunteer style={true} /> */}
