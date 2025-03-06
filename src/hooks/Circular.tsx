@@ -31,7 +31,7 @@ const CircleProgress = ({
         observer.unobserve(circleRef.current);
       }
     };
-  }, []);
+  }, [circleRef.current]);
 
   useEffect(() => {
     if (isInViewport && percentage <= finish) {

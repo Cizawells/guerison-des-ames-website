@@ -47,7 +47,7 @@ const HeroSection = () => {
             <h4 className="text-4xl font-bold drop-shadow-lg">Welcome to EMGA</h4>
             <h6 className="text-4xl font-bold drop-shadow-lg">
               <ReactTyped
-                strings={["one", "two", "three", "four"]}
+                strings={["we", "believe", "in", "Jesus", "our", "King"]}
                 typeSpeed={50}
                 backSpeed={30}
                 loop
