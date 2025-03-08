@@ -45,6 +45,17 @@ const menu_data: MenuItem[] = [
             { link: "/donate", title: "Donate" }
         ],
     },
+    {
+        id: 5,
+        has_dropdown: false,
+        title: "Get in touch",
+        link: "/contact",
+        sub_menus: [
+            { link: "/portfolio", title: "Portfolio" },
+            { link: "/portfolio-details", title: "Portfolio Details" },
+            { link: "/donate", title: "Donate" }
+        ],
+    },
     // {
     //     id: 5,
     //     has_dropdown: true,
