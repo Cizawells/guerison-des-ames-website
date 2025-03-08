@@ -23,6 +23,17 @@ const menu_data: MenuItem[] = [
             { link: "/causes-details", title: "Causes Details" },
         ],
     },
+    {
+        id: 2,
+        has_dropdown: false,
+        title: "Ministries",
+        link: "/ministries",
+        sub_menus: [
+            { link: "/causes", title: "Causes" },
+            { link: "/causes-slider", title: "Causes Slider" },
+            { link: "/causes-details", title: "Causes Details" },
+        ],
+    },
     // {
     //     id: 3,
     //     has_dropdown: true,

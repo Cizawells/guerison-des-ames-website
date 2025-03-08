@@ -7,11 +7,11 @@ import EventSliderArea from "./EventSliderArea"
 const EventSlider = () => {
    return (
       <>
-         <HeaderOne style_1={false} style_2={false} />
+         <HeaderOne style_1={true} style_2={true} />
          <main>
-            <Breadcrumb page_title="Our Events Slider" page_list="Event" style={false} />
+            <Breadcrumb page_title="Our Ministries" page_list="Event" style={false} />
             <EventSliderArea/>
-            <Brand style={true} />
+            {/* <Brand style={true} /> */}
          </main>
          <FooterOne />
       </>
