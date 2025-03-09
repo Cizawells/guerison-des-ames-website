@@ -18,7 +18,7 @@ import ChooseArea from "./ChooseArea"
 const HomeTwo = () => {
   return (
     <>
-      <HeaderOne style_1={true} style_2={false} />
+      <HeaderOne style_1={true} style_2={true} />
       <main>
         <HeroArea />
         <ChooseArea />

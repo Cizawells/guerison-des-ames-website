@@ -12,7 +12,7 @@ import CtaArea from "@/components/homes/home-three/CtaArea"
 const InnerAbout = () => {
    return (
       <>
-         <HeaderOne style_1={true} style_2={false} />
+         <HeaderOne style_1={true} style_2={true} />
          <main>
             <Breadcrumb page_title="About Us" page_list="About" style={true} />
             {/* <Brand style={true} /> */}

@@ -9,7 +9,7 @@ import LocationMap from "./LocationMap"
 const Contact = () => {
    return (
       <>
-         <HeaderOne style_1={true} style_2={false} />
+         <HeaderOne style_1={true} style_2={true} />
          <main>
             <Breadcrumb page_title="Contact Us" page_list="Contact" style={false} />
             {/* <Brand style={true} /> */}
