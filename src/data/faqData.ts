@@ -1,49 +1,23 @@
 const faq_data = [
-   {
-      id: 1,
-      page: "home_1",
-      question: "How can i get help?",
-      answer: "Lorem ipsum dolor sit amet, vix an natum labitur eleifnd, mel am laoreet menandri. Ei justo complectitur duo. Ei mundi solet ut soletu possit quo.",
-      showAnswer: false,
-   },
-   {
-      id: 2,
-      page: "home_1",
-      question: "What’s Service We Provided?",
-      answer: "Lorem ipsum dolor sit amet, vix an natum labitur eleifnd, mel am laoreet menandri. Ei justo complectitur duo. Ei mundi solet ut soletu possit quo.",
-      showAnswer: false,
-   },
-   {
-      id: 3,
-      page: "home_1",
-      question: "How can i get help by bizco?",
-      answer: "Lorem ipsum dolor sit amet, vix an natum labitur eleifnd, mel am laoreet menandri. Ei justo complectitur duo. Ei mundi solet ut soletu possit quo.",
-      showAnswer: false,
-   },
+
 
    // home two
 
    {
       id: 1,
       page: "home_2",
-      question: "How can i get help?",
-      answer: "Lorem ipsum dolor sit amet, vix an natum labitur eleifnd, mel am laoreet menandri. Ei justo complectitur duo. Ei mundi solet ut soletu possit quo.",
+      question: "What are the EMGA Church service time?",
+      answer: "At the CityLight Foursquare Church we hold our services every week. You can read more about our services here.",
       showAnswer: false,
    },
    {
       id: 2,
       page: "home_2",
-      question: "Why We are Help African Childen?",
-      answer: "Making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model words which don't look even slightly believable. If you are going to use a passage",
+      question: "Where is the CityLight Foursquare Church located?",
+      answer: "The CityLight Foursquare Church is located in Kigali, Kimironko, KG 11 Ave 113. Find us on the map.",
       showAnswer: false,
    },
-   {
-      id: 3,
-      page: "home_2",
-      question: "How can I get help from charity?",
-      answer: "Lorem ipsum dolor sit amet, vix an natum labitur eleifnd, mel am laoreet menandri. Ei justo complectitur duo. Ei mundi solet ut soletu possit quo.",
-      showAnswer: false,
-   },
+  
 
    // inner page 
 
