@@ -1,5 +1,6 @@
 "use client"
 import faq_data from "@/data/faqData";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 interface DataType {
@@ -8,6 +9,7 @@ interface DataType {
    question: string;
    answer: string;
    showAnswer: boolean;
+   link?: string
 }
 
 const FaqAnswerQuestion = () => {
@@ -51,7 +53,7 @@ const FaqAnswerQuestion = () => {
                   </h5>
                   {item.showAnswer && (
                      <div className="accordion-collapse collapse show" id={`collapse${item.id}`}>
-                        <div className="accordion-body">{item.answer}</div>
+                        <div className="accordion-body">{item.answer}<Link href={`${item.link}`}>here</Link></div>
                      </div>
                   )}
                </div>

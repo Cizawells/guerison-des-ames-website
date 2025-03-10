@@ -9,6 +9,7 @@ const faq_data = [
       question: "What are the EMGA Church service time?",
       answer: "At the CityLight Foursquare Church we hold our services every week. You can read more about our services here.",
       showAnswer: false,
+      link: "/serviceTimes"
    },
    {
       id: 2,

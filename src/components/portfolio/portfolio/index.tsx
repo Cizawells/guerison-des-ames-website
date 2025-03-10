@@ -9,7 +9,7 @@ import PortfolioArea from "./PortfolioArea"
 const Portfolio = () => {
    return (
       <>
-         <HeaderOne style_1={true} style_2={false} />
+         <HeaderOne style_1={true} style_2={true} />
          <main>
             <Breadcrumb page_title="Our Gallery" page_list="Portfolio" style={false} />
             <PortfolioArea />

@@ -1,4 +1,4 @@
-import ServiceTimes from "@/components/inner-pages/serviceTimes/ServiceTimes";
+import ServiceTimes from "@/components/inner-pages/serviceTimes";
 import Wrapper from "@/layout/Wrapper";
 
 export const metadata = {
