@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-import portfolioDetailsThumb from "@/assets/img/portfolio/portfolio-details.jpg"
+// import portfolioDetailsThumb from "@/assets/img/portfolio/portfolio-details.jpg"
 
 interface ContentData {
    title_1: string;
@@ -28,7 +28,7 @@ const PortfolioDetailsArea = () => {
          <div className="container">
             <div className="portfolio-details-content">
                <div className="details-image mb-50">
-                  <Image src={portfolioDetailsThumb} alt="Portfolio details" />
+                  {/* <Image src={portfolioDetailsThumb} alt="Portfolio details" /> */}
                </div>
                <h3 className="title mb-20">{title_1}</h3>
                <p>{desc_1}</p>
