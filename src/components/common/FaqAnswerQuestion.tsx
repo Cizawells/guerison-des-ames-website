@@ -53,7 +53,7 @@ const FaqAnswerQuestion = () => {
                   </h5>
                   {item.showAnswer && (
                      <div className="accordion-collapse collapse show" id={`collapse${item.id}`}>
-                        <div className="accordion-body">{item.answer}<Link href={`${item.link}`}>here</Link></div>
+                        <div className="accordion-body active">{item.answer}<Link href={`${item.link}`}> here.</Link></div>
                      </div>
                   )}
                </div>

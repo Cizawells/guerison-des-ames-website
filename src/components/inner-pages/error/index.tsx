@@ -6,7 +6,7 @@ import ErrorArea from "./ErrorArea"
 const NotFound = () => {
    return (
       <>
-         <HeaderOne style_1={false} style_2={false} />
+         <HeaderOne style_1={true} style_2={true} />
          <main>
             <Breadcrumb page_title="Error Page" page_list="404" style={false} />
             <ErrorArea />

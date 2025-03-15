@@ -15,13 +15,20 @@ import Brand from "@/components/common/Brand"
 import FooterTwo from "@/layout/footers/FooterTwo"
 import ChooseArea from "./ChooseArea"
 
-const HomeTwo = () => {
+import { sanityClient } from "../../../../sanity.client";
+import { urlFor } from "../../../../sanity.image";
+
+
+
+
+const HomeTwo = (props: any) => {
+  console.log("homeTwoprops", props)
   return (
     <>
       <HeaderOne style_1={true} style_2={true} />
       <main>
-        <HeroArea />
-        <ChooseArea />
+        <HeroArea heroData={props.heroData}/>
+        <ChooseArea heroData={props.heroData} />
         {/* <Features style={true} /> */}
         {/* <UrgentCause /> */}
         {/* <About /> */}

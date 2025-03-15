@@ -7,7 +7,7 @@ const faq_data = [
       id: 1,
       page: "home_2",
       question: "What are the EMGA Church service time?",
-      answer: "At the CityLight Foursquare Church we hold our services every week. You can read more about our services here.",
+      answer: "At the CityLight Foursquare Church we hold our services every week. You can read more about our services",
       showAnswer: false,
       link: "/serviceTimes"
    },
@@ -15,7 +15,7 @@ const faq_data = [
       id: 2,
       page: "home_2",
       question: "Where is the CityLight Foursquare Church located?",
-      answer: "The CityLight Foursquare Church is located in Kigali, Kimironko, KG 11 Ave 113. Find us on the map.",
+      answer: "The CityLight Foursquare Church is located in Kigali, Kimironko, KG 11 Ave 113. Find us on the map",
       showAnswer: false,
    },
   

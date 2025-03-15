@@ -6,16 +6,17 @@ import VideoPopup from "@/modals/VideoPopup"
 import videoBg from "@/assets/img/video/1.jpg"
 import leafShape from "@/assets/img/shapes/three-round-green.png"
 
-const tab_title: string[] = ["Mission", "Vission", "Velu",]
 
-const tab_content: JSX.Element[] = [
-   (<>The vision of the EMGA is to see a family-church of Jesus Christ that seeks those who are lost in sin for the salvation of their souls and transforms them into disciples of Jesus Christ for the glory of God</>),
-   (<>Our Vission: There are many variations of passages of Lorem Ipsum available, random aset words which don&apos;t look even slightly believable, or but the majority have suffered alteration in some form, by injected humour.</>),
-   (<>Our Velu: There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or random aset words which don&apos;t look even slightly believable.</>),
-]
 
-const ChooseArea = () => {
 
+const ChooseArea = ({heroData}: any) => {
+const tab_title: string[] = ["Mission", "Vission"]
+
+   const tab_content: JSX.Element[] = [
+      (<>{heroData.mission}</>),
+      (<>{heroData.vision}</>),
+      
+   ]
    const [isVideoOpen, setIsVideoOpen] = useState(false);
 
    // Define state to keep track of the active tab

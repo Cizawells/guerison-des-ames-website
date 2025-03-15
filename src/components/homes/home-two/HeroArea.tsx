@@ -3,11 +3,15 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ReactTyped } from "react-typed";
 import { motion, AnimatePresence } from "framer-motion";
+import { urlFor } from "../../../../sanity.image";
 
-const HeroSection = () => {
+const HeroSection = ({heroData}: any) => {
+  console.log("heroData", heroData)
+  console.log(urlFor(heroData.imageOne).url())
   const images = [
-    "/assets/img/hero/1.jpg",
-    "/assets/img/hero/2.jpg",
+    urlFor(heroData.imageOne).url(),
+    urlFor(heroData.imageTwo).url(),
+    urlFor(heroData.imageThree).url(),
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

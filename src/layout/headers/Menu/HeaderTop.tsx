@@ -20,8 +20,13 @@ const HeaderTop = ({ style }: any) => {
                <ul className="topbar-right">
                   <li className="social-area">
                      <span>Follow Us - </span>
-                     <Link href="#"><i className="fab fa-facebook-f"></i></Link>
-                     <Link href="#"><i className="fab fa-youtube"></i></Link>
+                     <Link href="https://www.youtube.com/@e.m.guerisondesamesnyakabi3386"><i className="fab fa-facebook-f"></i></Link>
+                     {/* <Link href="https://www.youtube.com/@e.m.guerisondesamesnyakabi3386"><i className="fab fa-youtube"></i></Link> */}
+                     <Link  legacyBehavior href="https://www.youtube.com/@e.m.guerisondesamesnyakabi3386" passHref>
+  <a target="_blank" rel="noopener noreferrer">
+    <i className="fab fa-youtube"></i>
+  </a>
+</Link>
                   </li>
                </ul>
             </div>
