@@ -1,13 +1,28 @@
 "use client"
-import portfolio_data from "@/data/portfolioData";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { urlFor } from "../../../../sanity.image";
 
 const tab_title: string[] = ["All", "Worship", "Preaching", "Children", "Audience"];
-const portfolioCounts: number[] = [portfolio_data.length, 2, 5, 3, 3];
 
-const PortfolioArea = () => {
+type DataType = {
+  id: number;
+  thumb: string;
+  title: string;
+  category: string;
+};
+
+const PortfolioArea = ({images}: any) => {
+const portfolioCounts: number[] = [images.images.length, 2, 5, 3, 3];
+
+  const portfolio_data: DataType[] = images?.images?.map((image: any, index: number) => ({
+    id: index + 1,
+    thumb: image?.image?.asset ? urlFor(image.image).url() : "/placeholder.jpg", // Get image URL or fallback
+    title: image.image.alt || "Untitled", // Use alt text or a default title
+    category: image.category || "Uncategorized",
+  })) || [];
+  console.log("pooooooo", portfolio_data)
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = (index: any) => {

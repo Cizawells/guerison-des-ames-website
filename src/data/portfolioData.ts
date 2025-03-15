@@ -10,7 +10,7 @@ import portfolioThumb_6 from "@/assets/img/portfolio/6.jpg";
 interface DataType {
    id: number,
    thumb: StaticImageData | string;
-   title: string;
+   title?: string;
    category: string;
 }[];
 
