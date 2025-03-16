@@ -8,7 +8,7 @@ import HeaderOne from "@/layout/headers/HeaderOne";
 export const metadata = {
    title: "Blog Details Charite - Charity & Donation React Next js Template",
 };
-const index = ({ params }: { params: { id: number } }) => {
+const index = ({ params }: { params: { id: string | string[] } }) => {
    const blogs = blog_data.filter(items => items.page === "inner_page");
    const single_blog = blogs.find((item) => Number(item.id) === Number(params.id));
 
