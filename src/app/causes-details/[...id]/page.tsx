@@ -8,7 +8,7 @@ import HeaderOne from "@/layout/headers/HeaderOne";
 export const metadata = {
    title: "Cause Details Charite - Charity & Donation React Next js Template",
 };
-const index = ({ params }: { params: { id: number } }) => {
+const index = ({ params }: { params: { id: string | string[] } }) => {
    const causes = cause_data.filter(items => items.page === "inner_page");
    const single_cause = causes.find((item) => Number(item.id) === Number(params.id));
 
