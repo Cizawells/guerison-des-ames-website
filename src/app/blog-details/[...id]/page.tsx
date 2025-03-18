@@ -9,8 +9,11 @@ export const metadata = {
    title: "Blog Details Charite - Charity & Donation React Next js Template",
 };
 const index = ({ params }: { params: { id: string | string[] } }) => {
+
+      const blogId = Array.isArray(params.id) ? params.id[0] : params.id; // Ensure blogId is a string
+
    const blogs = blog_data.filter(items => items.page === "inner_page");
-   const single_blog = blogs.find((item) => Number(item.id) === Number(params.id));
+   const single_blog = blogs.find((item) => Number(item.id) === Number(blogId));
 
    return (
       <Wrapper>
