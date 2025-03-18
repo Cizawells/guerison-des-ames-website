@@ -39,7 +39,7 @@ const Testimonial = () => {
                      fade={true}
                      autoplaySpeed={1000}
                      asNavFor={slider2Ref.current as Slider | undefined}
-                     ref={(slider) => (slider1Ref.current = slider)}
+                     ref={slider2Ref}
                      className="testimonial-content-slider text-white">
                      {testimonial_data.filter((item) => item.page === "home_1").map((item) => (
                         <div key={item.id} className="testimonial-content-item">
@@ -56,7 +56,8 @@ const Testimonial = () => {
                      slidesToShow={3}
                      slidesToScroll={1}
                      asNavFor={slider1Ref.current as Slider | undefined}
-                     ref={(slider) => (slider2Ref.current = slider)}
+                     ref={slider2Ref}
+                     // ref={(slider) => (slider2Ref.current = slider)}
                      dots={false}
                      autoplay={false}
                      variableWidth={true}
