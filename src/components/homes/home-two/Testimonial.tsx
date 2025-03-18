@@ -44,7 +44,8 @@ const Testimonial = ({ style }: any) => {
                         fade={true}
                         autoplaySpeed={1000}
                         asNavFor={slider2Ref.current as Slider | undefined}
-                        ref={(slider) => (slider1Ref.current = slider)}
+                        // ref={(slider) => (slider1Ref.current = slider)}
+                        ref={slider2Ref}
                         className="testimonial-content-slider"
                      >
                         {testimonial_data
@@ -66,7 +67,8 @@ const Testimonial = ({ style }: any) => {
                         slidesToShow={3}
                         slidesToScroll={1}
                         asNavFor={slider1Ref.current as Slider | undefined}
-                        ref={(slider) => (slider2Ref.current = slider)}
+                        // ref={(slider) => (slider2Ref.current = slider)}
+                        ref={slider2Ref}
                         dots={false}
                         autoplay={false}
                         vertical= {true}
