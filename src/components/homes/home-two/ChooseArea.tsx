@@ -13,8 +13,8 @@ const ChooseArea = ({heroData}: any) => {
 const tab_title: string[] = ["Mission", "Vission"]
 
    const tab_content: JSX.Element[] = [
-      (<>{heroData.mission}</>),
-      (<>{heroData.vision}</>),
+      (<>{heroData?.mission }</>),
+      (<>{heroData?.vision}</>),
       
    ]
    const [isVideoOpen, setIsVideoOpen] = useState(false);
