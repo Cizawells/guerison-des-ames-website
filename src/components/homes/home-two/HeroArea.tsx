@@ -6,8 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { urlFor } from "../../../../sanity.image";
 
 const HeroSection = ({heroData}: any) => {
-  console.log("heroData", heroData)
-  console.log(urlFor(heroData.imageOne).url())
   const images = [
     urlFor(heroData.imageOne).url(),
     urlFor(heroData.imageTwo).url(),
