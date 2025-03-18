@@ -5,6 +5,7 @@ import VideoPopup from "@/modals/VideoPopup"
 
 import videoBg from "@/assets/img/video/1.jpg"
 import leafShape from "@/assets/img/shapes/three-round-green.png"
+import { urlFor } from "../../../../sanity.image"
 
 
 
@@ -64,7 +65,7 @@ const tab_title: string[] = ["Mission", "Vission"]
                   <div className="col-lg-6">
                      <div className="why-choose-video">
                         <div className="video rel">
-                           <Image src={videoBg} alt="Video" />
+                           <Image src={urlFor(heroData.thumbnailVideoOne).url()} alt="Video" width={300} height={300}/>
                            <a onClick={() => setIsVideoOpen(true)} style={{ cursor: "pointer" }} className="video-play video-play--one" data-effect="mfp-zoom-in"><i className="fa fa-play"></i></a>
                         </div>
                         <Image className="leaf-shape top_image_bounce" src={leafShape} alt="Shape" />

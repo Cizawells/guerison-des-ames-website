@@ -40,7 +40,7 @@ const HomeTwo = (props: any) => {
         {/* <BecomeVolunteer/> */}
         <Testimonial style={true} />
         {/* <CtaArea /> */}
-        <FAQ />
+        <FAQ heroData={props.heroData}/>
         {/* <Brand style={false} /> */}
       </main>
       <FooterTwo/>

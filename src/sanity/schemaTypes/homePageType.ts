@@ -64,6 +64,38 @@ export const heroSlider = defineType({
       
     }),
     defineField({
+      name: "thumbnailVideoOne",
+      title: "First video thumbnail",
+      type: "image",
+      options: {
+        hotspot: true, // Allows cropping
+      },
+      fields: [
+        defineField({
+          name: "alt",
+          title: "Alternative Text",
+          type: "string",
+          description: "Describe the image for accessibility",
+        }),
+      ],
+    }),
+    defineField({
+      name: "thumbnailVideoTwo",
+      title: "Second video thumbnail",
+      type: "image",
+      options: {
+        hotspot: true, // Allows cropping
+      },
+      fields: [
+        defineField({
+          name: "alt",
+          title: "Alternative Text",
+          type: "string",
+          description: "Describe the image for accessibility",
+        }),
+      ],
+    }),
+    defineField({
       name: 'mission',
       type: 'text',
     }),
