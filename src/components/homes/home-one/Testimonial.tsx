@@ -31,7 +31,7 @@ const Testimonial = () => {
                </div>
 
                <div className="col-lg-7">
-                  <Slider
+                  {/* <Slider
                      slidesToShow={1}
                      slidesToScroll={1}
                      arrows={false}
@@ -81,7 +81,7 @@ const Testimonial = () => {
                      <div className="testimonial-thumb-item">
                         <Image src={testimonialThumb_3} alt="Author" />
                      </div>
-                  </Slider>
+                  </Slider> */}
                </div>
             </div>
          </div>
