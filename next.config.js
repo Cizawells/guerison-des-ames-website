@@ -10,7 +10,7 @@ const nextConfig = {
       return [
         {
           source: '/studio/:path*',
-          destination: '/sanity/:path*', // Redirects requests to the Sanity Studio
+          destination: '/studio/:path*', // Redirects requests to the Sanity Studio
         },
       ];
     },
