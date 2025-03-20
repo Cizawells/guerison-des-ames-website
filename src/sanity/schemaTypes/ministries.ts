@@ -1,9 +1,9 @@
 import { ImageIcon } from "@sanity/icons";
 import { defineType, defineField } from "sanity";
 
-export const heroSlider = defineType({
-  name: "heroSlider",
-  title: "Hero Page Slider",
+export const ministries = defineType({
+  name: "ministries",
+  title: "Ministries",
   type: "document",
   icon: ImageIcon, // Optional: Add an icon for better UI in Sanity Studio
   fields: [
@@ -13,88 +13,7 @@ export const heroSlider = defineType({
       type: "string",
       description: "Title for the hero slider (optional)",
     }),
-    defineField({
-      name: "imageOne",
-      title: "First Image",
-      type: "image",
-      options: {
-        hotspot: true, // Allows cropping
-      },
-      fields: [
-        defineField({
-          name: "alt",
-          title: "Alternative Text",
-          type: "string",
-          description: "Describe the image for accessibility",
-        }),
-      ],
-    }),
-    defineField({
-      name: "imageTwo",
-      title: "Second Image",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
-      fields: [
-        defineField({
-          name: "alt",
-          title: "Alternative Text",
-          type: "string",
-          description: "Describe the second image",
-        }),
-      ],
-      
-    }),
-    defineField({
-      name: "imageThree",
-      title: "Third Image",
-      type: "image",
-      options: {
-        hotspot: true,
-      },
-      fields: [
-        defineField({
-          name: "alt",
-          title: "Alternative Text",
-          type: "string",
-          description: "Describe the third image",
-        }),
-      ],
-      
-    }),
-    defineField({
-      name: "thumbnailVideoOne",
-      title: "First video thumbnail",
-      type: "image",
-      options: {
-        hotspot: true, // Allows cropping
-      },
-      fields: [
-        defineField({
-          name: "alt",
-          title: "Alternative Text",
-          type: "string",
-          description: "Describe the image for accessibility",
-        }),
-      ],
-    }),
-    defineField({
-      name: "thumbnailVideoTwo",
-      title: "Second video thumbnail",
-      type: "image",
-      options: {
-        hotspot: true, // Allows cropping
-      },
-      fields: [
-        defineField({
-          name: "alt",
-          title: "Alternative Text",
-          type: "string",
-          description: "Describe the image for accessibility",
-        }),
-      ],
-    }),
+  
     defineField({
       name: "ministryOne",
       title: "First ministry Image",
@@ -175,13 +94,6 @@ export const heroSlider = defineType({
         }),
       ],
     }),
-    defineField({
-      name: 'mission',
-      type: 'text',
-    }),
-    defineField({
-      name: 'vision',
-      type: 'text',
-    }),
+    
   ],
 });

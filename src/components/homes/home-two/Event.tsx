@@ -28,9 +28,9 @@ const Event = () => {
                               <li><i className="flaticon-time"></i> {item.time}</li>
                            </ul>
                         </div>
-                        <div className="date">
+                        {/* <div className="date">
                            <b>{item.date}</b><span>dec</span>
-                        </div>
+                        </div> */}
                      </div>
                   </div>
                ))}

@@ -19,7 +19,6 @@ async function getHeroData() {
 export default async function Index() {
   const { heroData, testimonialsData } = await getHeroData(); // ✅ Fetching data inside Server Component
 
-  console.log("✅ Data fetched:", heroData, testimonialsData); // Should log data in terminal (not browser console)
 
   return (
     <Wrapper>
