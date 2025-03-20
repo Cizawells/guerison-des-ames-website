@@ -1,41 +1,51 @@
-"use client"
-import Image from "next/image"
-import { useState } from "react"
-import VideoPopup from "@/modals/VideoPopup"
+"use client";
 import FaqAnswerQuestion from "@/components/common/FaqAnswerQuestion";
+import VideoPopup from "@/modals/VideoPopup";
+import Image from "next/image";
+import { useState } from "react";
 
-import faqThumb from "@/assets/img/video/2.jpg";
 import { urlFor } from "../../../../sanity.image";
 
-const FAQ = ({heroData}: any) => {
+const FAQ = ({ heroData }: any) => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
 
-   const [isVideoOpen, setIsVideoOpen] = useState(false);
-
-   return (
-      <>
-         <div className="faq-area-two py-120">
-            <div className="container">
-               <div className="row gap-60">
-                  <div className="col-lg-6">
-                     <div className="faq-video-part rel">
-                        <Image src={urlFor(heroData.thumbnailVideoTwo).url()} alt="Video" width={300} height={300}/>
-                        <a onClick={() => setIsVideoOpen(true)} style={{ cursor: "pointer" }} className="video-play video-play--two" data-effect="mfp-zoom-in"><i className="fa fa-play"></i></a>
-                     </div>
-                  </div>
-                  <FaqAnswerQuestion />
-               </div>
+  return (
+    <>
+      <div className="faq-area-two py-120">
+        <div className="container">
+          <div className="row gap-60">
+            <div className="col-lg-6">
+              <div className="faq-video-part rel">
+                <Image
+                  src={urlFor(heroData?.thumbnailVideoTwo).url()}
+                  alt="Video"
+                  width={300}
+                  height={300}
+                />
+                <a
+                  onClick={() => setIsVideoOpen(true)}
+                  style={{ cursor: "pointer" }}
+                  className="video-play video-play--two"
+                  data-effect="mfp-zoom-in"
+                >
+                  <i className="fa fa-play"></i>
+                </a>
+              </div>
             </div>
-         </div>
-         
-         {/* video modal start */}
-         <VideoPopup
-            isVideoOpen={isVideoOpen}
-            setIsVideoOpen={setIsVideoOpen}
-            videoId={"5NvSZ6jLoo"}
-         />
-         {/* video modal end */}
-      </>
-   )
-}
+            <FaqAnswerQuestion />
+          </div>
+        </div>
+      </div>
 
-export default FAQ
+      {/* video modal start */}
+      <VideoPopup
+        isVideoOpen={isVideoOpen}
+        setIsVideoOpen={setIsVideoOpen}
+        videoId={"5NvSZ6jLoo"}
+      />
+      {/* video modal end */}
+    </>
+  );
+};
+
+export default FAQ;
