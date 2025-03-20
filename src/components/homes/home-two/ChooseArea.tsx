@@ -7,6 +7,7 @@ import leafShape from "@/assets/img/shapes/three-round-green.png";
 import { urlFor } from "../../../../sanity.image";
 
 const ChooseArea = ({ heroData }: any) => {
+  console.log(heroData);
   const tab_title: string[] = ["Mission", "Vission"];
 
   const tab_content: JSX.Element[] = [
@@ -70,12 +71,15 @@ const ChooseArea = ({ heroData }: any) => {
             <div className="col-lg-6">
               <div className="why-choose-video">
                 <div className="video rel">
-                  <Image
-                    src={urlFor(heroData?.thumbnailVideoOne).url()}
-                    alt="Video"
-                    width={300}
-                    height={300}
-                  />
+                  {heroData?.thumbnailVideoOne && (
+                    <Image
+                      src={urlFor(heroData?.thumbnailVideoOne).url()}
+                      alt="Video"
+                      width={300}
+                      height={300}
+                    />
+                  )}
+
                   <a
                     onClick={() => setIsVideoOpen(true)}
                     style={{ cursor: "pointer" }}

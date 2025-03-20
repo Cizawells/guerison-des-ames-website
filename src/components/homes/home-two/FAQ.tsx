@@ -16,12 +16,15 @@ const FAQ = ({ heroData }: any) => {
           <div className="row gap-60">
             <div className="col-lg-6">
               <div className="faq-video-part rel">
-                <Image
-                  src={urlFor(heroData?.thumbnailVideoTwo).url()}
-                  alt="Video"
-                  width={300}
-                  height={300}
-                />
+                {heroData?.thumbnailVideoTwo && (
+                  <Image
+                    src={urlFor(heroData?.thumbnailVideoTwo).url()}
+                    alt="Video"
+                    width={300}
+                    height={300}
+                  />
+                )}
+
                 <a
                   onClick={() => setIsVideoOpen(true)}
                   style={{ cursor: "pointer" }}
