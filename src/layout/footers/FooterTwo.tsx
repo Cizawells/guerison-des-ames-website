@@ -58,7 +58,7 @@ const FooterTwo = () => {
             <div className="widget widget_about">
               <div className="logo_footer mb-25">
                 <Link href="/">
-                  <Image src={logo} alt="Logo" />
+                  <Image src={logo} alt="Logo" width={200} height={200} />
                 </Link>
               </div>
               <p> {footer_about_text} </p>
