@@ -3,7 +3,7 @@ import FooterOne from "@/layout/footers/FooterOne";
 import HeaderOne from "@/layout/headers/HeaderOne";
 import EventSliderArea from "./EventSliderArea";
 
-const EventSlider = () => {
+const EventSlider = ({ ministriesData }: any) => {
   return (
     <>
       <HeaderOne style_1={true} style_2={true} />
@@ -13,7 +13,7 @@ const EventSlider = () => {
           page_list="Ministries"
           style={false}
         />
-        <EventSliderArea />
+        <EventSliderArea ministriesData={ministriesData} />
         {/* <Brand style={true} /> */}
       </main>
       <FooterOne />

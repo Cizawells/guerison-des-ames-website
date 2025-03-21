@@ -1,5 +1,5 @@
 import { ImageIcon } from "@sanity/icons";
-import { defineType, defineField } from "sanity";
+import { defineField, defineType } from "sanity";
 
 export const ministries = defineType({
   name: "ministries",
@@ -8,15 +8,21 @@ export const ministries = defineType({
   icon: ImageIcon, // Optional: Add an icon for better UI in Sanity Studio
   fields: [
     defineField({
-      name: "title",
-      title: "Slider Title",
+      name: "ministryTitle",
+      title: "Ministry Title",
       type: "string",
       description: "Title for the hero slider (optional)",
     }),
-  
     defineField({
-      name: "ministryOne",
-      title: "First ministry Image",
+      name: "ministryDescription",
+      title: "Ministry Description",
+      type: "string",
+      description: "Title for the hero slider (optional)",
+    }),
+
+    defineField({
+      name: "ministryImage",
+      title: "Ministry Image",
       type: "image",
       options: {
         hotspot: true, // Allows cropping
@@ -30,70 +36,5 @@ export const ministries = defineType({
         }),
       ],
     }),
-    defineField({
-      name: "ministryTwo",
-      title: "Second Ministry Image",
-      type: "image",
-      options: {
-        hotspot: true, // Allows cropping
-      },
-      fields: [
-        defineField({
-          name: "alt",
-          title: "Alternative Text",
-          type: "string",
-          description: "Describe the image for accessibility",
-        }),
-      ],
-    }),
-    defineField({
-      name: "ministryThree",
-      title: "Third Ministry Image",
-      type: "image",
-      options: {
-        hotspot: true, // Allows cropping
-      },
-      fields: [
-        defineField({
-          name: "alt",
-          title: "Alternative Text",
-          type: "string",
-          description: "Describe the image for accessibility",
-        }),
-      ],
-    }),
-    defineField({
-      name: "fourthMinistry",
-      title: "Fourth Ministry Image ",
-      type: "image",
-      options: {
-        hotspot: true, // Allows cropping
-      },
-      fields: [
-        defineField({
-          name: "alt",
-          title: "Alternative Text",
-          type: "string",
-          description: "Describe the image for accessibility",
-        }),
-      ],
-    }),
-    defineField({
-      name: "fifthMinistry",
-      title: "Fifth Ministry Image",
-      type: "image",
-      options: {
-        hotspot: true, // Allows cropping
-      },
-      fields: [
-        defineField({
-          name: "alt",
-          title: "Alternative Text",
-          type: "string",
-          description: "Describe the image for accessibility",
-        }),
-      ],
-    }),
-    
   ],
 });

@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 async function getMinistries() {
-  const heroQuery = `*[_type == "ministries"][0]`;
+  const heroQuery = `*[_type == "ministries"]`;
 
   const ministriesData = await sanityClient.fetch(
     heroQuery,
@@ -19,11 +19,10 @@ async function getMinistries() {
 }
 const index = async () => {
   const { ministriesData } = await getMinistries(); // ✅ Fetching data inside Server Component
-
-  console.log("ministrieeees", ministriesData);
+  // console.log("mmmmmmmmm", ministriesData);
   return (
     <Wrapper>
-      <EventSlider />
+      <EventSlider ministriesData={ministriesData} />
     </Wrapper>
   );
 };
