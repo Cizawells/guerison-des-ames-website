@@ -37,7 +37,7 @@ const footer_content: ContentType = {
   news_title: "Newsletter",
   news_text: "Wimply dummy text of the priatyp industry orem Ipsum",
   gallery_title: "Photo Gallery",
-  copyright_text: "Copyright 2023 All Right Reserved",
+  copyright_text: "Copyright &copy; Guérison des ames 2025. All Right Reserved",
 };
 
 const {
@@ -58,7 +58,7 @@ const FooterTwo = () => {
             <div className="widget widget_about">
               <div className="logo_footer mb-25">
                 <Link href="/">
-                  <Image src={logo} alt="Logo" width={200} height={200} />
+                  <Image src={logo} alt="Logo" width={200} height={70} />
                 </Link>
               </div>
               <p> {footer_about_text} </p>
@@ -99,19 +99,6 @@ const FooterTwo = () => {
                   </div>
                 </div>
               </div>
-
-              <div className="col-sm-6">
-                <div className="widget widget_subscribe">
-                  <h4 className="widget-title">{news_title}</h4>
-                  <p>{news_text}</p>
-                  <form onClick={(e) => e.preventDefault()}>
-                    <input type="email" placeholder="Email address" required />
-                    <button type="submit">
-                      <i className="flaticon-right-arrow"></i>
-                    </button>
-                  </form>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -125,7 +112,7 @@ const FooterTwo = () => {
               <Image src={donate} alt="Donate By" />
             </div>
             <div className="copyright">
-              <p>{copyright_text}</p>
+              <p>Copyright &copy; Guérison des ames 2025. All Right Reserved</p>
             </div>
           </div>
         </div>

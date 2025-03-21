@@ -15,8 +15,6 @@ const EventSliderArea = ({ ministriesData }: any) => {
     desc: m.ministryDescription,
   }));
 
-  console.log("eveeeee", eventsData);
-
   const CustomPrevArrow = (props: any) => {
     const { onClick } = props;
     return (
@@ -88,7 +86,7 @@ const EventSliderArea = ({ ministriesData }: any) => {
                   <h4>
                     <Link href={`/event-details/${item.id}`}>{item.title}</Link>
                   </h4>
-                  <ul className="blog-meta">
+                  {/* <ul className="blog-meta">
                     <li>
                       <i className="flaticon-time"></i>{" "}
                       <Link href="#">{item.time}</Link>
@@ -97,7 +95,7 @@ const EventSliderArea = ({ ministriesData }: any) => {
                       <i className="flaticon-map"></i>{" "}
                       <Link href="#">{item.city}</Link>
                     </li>
-                  </ul>
+                  </ul> */}
                   <p>{item.desc}</p>
                   {/* <Link
                     className="event-btn"
