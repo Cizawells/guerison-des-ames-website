@@ -1,0 +1,15 @@
+
+  
+ 
+  @media (max-width: 1920px) {
+    .responsive-padding {
+      padding-top: 25%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .responsive-padding {
+        padding-top: 60%;
+    }
+  }
+  

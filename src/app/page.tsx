@@ -1,4 +1,6 @@
 import HomeOne from "@/components/homes/home-two";
+import "@/assets/css/responsive.css";  // Add this line to import globally
+
 import Wrapper from "@/layout/Wrapper";
 import { sanityClient } from "../../sanity.client";
 

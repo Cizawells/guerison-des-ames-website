@@ -9,6 +9,7 @@ import Volunteer from "./Volunteer";
 import { leadership } from "@/sanity/schemaTypes/leadership";
 
 const HomeTwo = (props: any) => {
+  console.log("prooo", props)
   return (
     <>
       <HeaderOne style_1={true} style_2={true} />
@@ -20,9 +21,9 @@ const HomeTwo = (props: any) => {
         {/* <About /> */}
         {/* <OurCause /> */}
         {/* <Counter /> */}
-        <Volunteer style={true} leadershipData={props.leadershipData}/>
+        {/* <Volunteer style={true} leadershipData={props.leadershipData}/> */}
 
-        <Event programsData={props.programsData}/>
+        {/* <Event programsData={props.programsData}/> */}
         {/* <BecomeVolunteer/> */}
         <Testimonial style={true} />
         {/* <CtaArea /> */}
