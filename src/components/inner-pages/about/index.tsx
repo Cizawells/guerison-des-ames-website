@@ -5,8 +5,9 @@ import Brand from "@/components/common/Brand"
 import About from "@/components/homes/home-two/About"
 import Testimonial from "@/components/homes/home-two/Testimonial"
 import CtaArea from "@/components/homes/home-two/CtaArea"
+import Volunteer from "@/components/homes/home-two/Volunteer"
 
-const InnerAbout = ({aboutusData}: any) => {
+const InnerAbout = ({aboutusData, leadershipData}: any) => {
    return (
       <>
          <HeaderOne style_1={true} style_2={true} />
@@ -14,6 +15,7 @@ const InnerAbout = ({aboutusData}: any) => {
             <Breadcrumb page_title="About Us" page_list="About" style={true} />
             {/* <Brand style={true} /> */}
             <About aboutusData={aboutusData}/>
+            <Volunteer style={true} leadershipData={leadershipData}/>
             {/* <Features /> */}
             {/* <Volunteer style={true} /> */}
             {/* <Testimonial style={false} /> */}
