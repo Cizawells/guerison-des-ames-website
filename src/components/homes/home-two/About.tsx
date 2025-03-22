@@ -90,7 +90,7 @@ const About = ({aboutusData}: any) => {
                <div className="col-xl-6">
                   <div className="about-us-image-part mb-65 rel">
                   <Image src={urlFor(aboutusData.image).url()} alt="About" width={200} height={600}/>
-                     <div className="experiences-year" style={{ backgroundImage: `url(/assets/img/about/experiences.jpg)` }}>
+                     <div className="experiences-year" style={{ backgroundImage: `url(${urlFor(aboutusData.experienceImage).url()})` }}>
                         <span className="experiences-year__number">25</span>
                         <span className="experiences-year__text">Years Experiences</span>
                      </div>

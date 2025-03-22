@@ -5,7 +5,7 @@ const faq_data = [
     page: "home_2",
     question: "What are the EMGA Church service time?",
     answer:
-      "At the CityLight Foursquare Church we hold our services every week. You can read more about our services",
+      "At Guerison des ames Church we hold our services every week. You can read more about our services",
     showAnswer: false,
     link: "/serviceTimes",
   },
@@ -14,7 +14,7 @@ const faq_data = [
     page: "home_2",
     question: "Where is the CityLight Foursquare Church located?",
     answer:
-      "The CityLight Foursquare Church is located in Kigali, Kimironko, KG 11 Ave 113. Find us on the map",
+      "Guerison des ames Church is located in Kigali, Kimironko, KG 11 Ave 113. Find us on the map",
     showAnswer: false,
   },
 

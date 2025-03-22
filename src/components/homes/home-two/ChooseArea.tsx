@@ -33,7 +33,7 @@ const ChooseArea = ({ heroData }: any) => {
                 <div className="section-title mb-60">
                   {/* <span className="section-title__subtitle mb-10">Why Choose Us</span> */}
                   <h2>
-                    Eglise Messianique pour la <span>Guerison des ames</span>
+                   Guérison <span>des ames</span>
                   </h2>
                 </div>
 
