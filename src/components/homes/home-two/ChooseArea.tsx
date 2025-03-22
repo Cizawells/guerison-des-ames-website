@@ -8,7 +8,7 @@ import { urlFor } from "../../../../sanity.image";
 
 const ChooseArea = ({ heroData }: any) => {
   console.log(heroData);
-  const tab_title: string[] = ["Mission", "Vission"];
+  const tab_title: string[] = ["Mission", "Vision"];
 
   const tab_content: JSX.Element[] = [
     <>{heroData?.mission}</>,

@@ -2,11 +2,12 @@ import Breadcrumb from "@/components/common/Breadcrumb"
 import ChooseArea from "@/components/homes/home-one/ChooseArea"
 import FAQ from "@/components/homes/home-three/FAQ"
 import Testimonial from "@/components/homes/home-three/Testimonial"
-import FooterOne from "@/layout/footers/FooterOne"
+import FooterOne from "@/layout/footers/FooterTwo"
 import HeaderOne from "@/layout/headers/HeaderOne"
 import PortfolioArea from "./PortfolioArea"
 
 const Portfolio = ({images}: any) => {
+   console.log("imagesss", images)
    return (
       <>
          <HeaderOne style_1={true} style_2={true} />

@@ -1,5 +1,5 @@
 import Breadcrumb from "@/components/common/Breadcrumb"
-import FooterOne from "@/layout/footers/FooterOne"
+import FooterOne from "@/layout/footers/FooterTwo"
 import HeaderOne from "@/layout/headers/HeaderOne"
 import Brand from "@/components/common/Brand"
 import ContactArea from "./ContactArea"

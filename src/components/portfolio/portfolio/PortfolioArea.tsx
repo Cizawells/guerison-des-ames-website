@@ -14,11 +14,11 @@ type DataType = {
 };
 
 const PortfolioArea = ({images}: any) => {
-const portfolioCounts: number[] = [images.images.length, 2, 5, 3, 3];
+const portfolioCounts: number[] = [images.length, 2, 5, 3, 3];
 
-  const portfolio_data: DataType[] = images?.images?.map((image: any, index: number) => ({
+  const portfolio_data: DataType[] = images?.map((image: any, index: number) => ({
     id: index + 1,
-    thumb: image?.image?.asset ? urlFor(image.image).url() : "/placeholder.jpg", // Get image URL or fallback
+    thumb: urlFor(image?.image).url(), // Get image URL or fallback
     title: image.image.alt || "Untitled", // Use alt text or a default title
     category: image.category || "Uncategorized",
   })) || [];
@@ -36,11 +36,11 @@ const portfolioCounts: number[] = [images.images.length, 2, 5, 3, 3];
         <div className="portfolio-item image">
           <Image src={item.thumb} alt="Portfolio" width={300} height={300}/>
           <div className="portfolio-item__over">
-            <a className="details-btn" href="portfolio-details.html">
+            {/* <a className="details-btn" href="portfolio-details.html">
               <i className="flaticon-chevron"></i>
-            </a>
+            </a> */}
             <h5>
-              <Link href="/portfolio-details">{item.title}</Link>
+              {/* <Link href="/portfolio-details">{item.title}</Link> */}
             </h5>
             <span className="category">{item.category}</span>
           </div>

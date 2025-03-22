@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 async function getGalleryData() {
-   const query = `*[_type == "gallery"][0]`; // Fetch first gallery
+   const query = `*[_type == "gallery"]`; // Fetch first gallery
    const galleryData = await sanityClient.fetch(query, {}, { next: { revalidate: 10 } });
  
    return galleryData;
