@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { urlFor } from "../../../../sanity.image"
 
-const Event = ({programsData}: any) => {
+const Event = ({programsData = []}: any) => {
    return (
       <div className="our-event-two bgs-cover pt-120 pb-90 rel z-1" style={{ backgroundImage: `url(/assets/img/events/1.jpg)` }}>
          <div className="container container-1090">
