@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import { urlFor } from "../../../../sanity.image";
 
 const EventSliderArea = ({ ministriesData }: any) => {
+  console.log("ministries", ministriesData)
   const eventsData = ministriesData.map((m: any, index: any) => ({
     id: index,
     thumb: urlFor(m?.ministryImage).url(),
@@ -69,47 +70,31 @@ const EventSliderArea = ({ ministriesData }: any) => {
 
   return (
     <div className="our-events-slider pt-120 pb-80 rel z-1">
-      <div className="container">
-        <Slider {...settings} className="events-slider-active row">
-          {eventsData.map((item: any) => (
-            <div key={item.id} className="col-lg-4">
-              <div className={`event-item-three ${item.item_bg}`}>
-                <div className="image">
-                  <Image
-                    src={item.thumb}
-                    alt="Event"
-                    width={200}
-                    height={200}
-                  />
+    <div className="container">
+       <Slider {...settings} className="events-slider-active row">
+          {eventsData
+          // .filter((items) => items.page === "inner_page").slice(0, 5)
+          .map((item: any) => (
+             <div key={item.id} className="col-lg-4">
+                <div className={`event-item-three ${item.item_bg}`}>
+                   <div className="image">
+                      <Image src={item.thumb} alt="Event" />
+                   </div>
+                   <div className="content">
+                      <h4><Link href={`/event-details/${item.id}`}>{item.title}</Link></h4>
+                      <ul className="blog-meta">
+                         <li><i className="flaticon-time"></i> <Link href="#">{item.time}</Link></li>
+                         <li><i className="flaticon-map"></i> <Link href="#">{item.city}</Link></li>
+                      </ul>
+                      <p>{item.desc}</p>
+                      <Link className="event-btn" href={`/event-details/${item.id}`}>Read more <i className="flaticon-chevron"></i></Link>
+                   </div>
                 </div>
-                <div className="content">
-                  <h4>
-                    <Link href={`/event-details/${item.id}`}>{item.title}</Link>
-                  </h4>
-                  {/* <ul className="blog-meta">
-                    <li>
-                      <i className="flaticon-time"></i>{" "}
-                      <Link href="#">{item.time}</Link>
-                    </li>
-                    <li>
-                      <i className="flaticon-map"></i>{" "}
-                      <Link href="#">{item.city}</Link>
-                    </li>
-                  </ul> */}
-                  <p>{item.desc}</p>
-                  {/* <Link
-                    className="event-btn"
-                    href={`/event-details/${item.id}`}
-                  >
-                    Read more <i className="flaticon-chevron"></i>
-                  </Link> */}
-                </div>
-              </div>
-            </div>
+             </div>
           ))}
-        </Slider>
-      </div>
+       </Slider>
     </div>
+ </div>
   );
 };
 
