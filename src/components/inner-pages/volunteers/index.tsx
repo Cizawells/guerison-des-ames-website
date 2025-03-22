@@ -3,7 +3,7 @@ import FooterOne from "@/layout/footers/FooterOne"
 import HeaderOne from "@/layout/headers/HeaderOne"
 import Volunteer from "@/components/homes/home-two/Volunteer"
 import VolunteerTwo from "@/components/homes/home-two/Volunteer"
-import VolunteerThree from "@/components/homes/home-three/Volunteer"
+import VolunteerThree from "@/components/homes/home-two/Volunteer"
 
 const Volunteers = () => {
    return (

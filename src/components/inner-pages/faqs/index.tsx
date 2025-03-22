@@ -4,7 +4,7 @@ import HeaderOne from "@/layout/headers/HeaderOne"
 import Brand from "@/components/common/Brand"
 import FAQ from "@/components/homes/home-two/FAQ"
 import FaqStyleOne from "./FaqStyleOne"
-import CtaArea from "@/components/homes/home-three/CtaArea"
+import CtaArea from "@/components/homes/home-two/CtaArea"
 import FaqStyleTwo from "./FaqStyleTwo"
 
 const Faqs = () => {
