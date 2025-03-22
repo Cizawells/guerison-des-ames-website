@@ -5,7 +5,7 @@ import Wrapper from "@/layout/Wrapper";
 import { sanityClient } from "../../sanity.client";
 
 export const metadata = {
-  title: "Charite - Charity & Donation React Next.js Template",
+  title: "Guerison des ames church",
 };
 
 async function getHeroData() {
