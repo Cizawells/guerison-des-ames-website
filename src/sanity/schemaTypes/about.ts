@@ -29,6 +29,22 @@ export const about = defineType({
         }),
       ],
     }),
+    defineField({
+      name: "experienceImage",
+      title: "Experience image",
+      type: "image",
+      options: {
+        hotspot: true, // Allows cropping
+      },
+      fields: [
+        defineField({
+          name: "alt",
+          title: "Alternative Text",
+          type: "string",
+          description: "Describe the image for accessibility",
+        }),
+      ],
+    }),
  
     defineField({
       name: 'aboutText',
