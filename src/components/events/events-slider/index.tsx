@@ -4,7 +4,6 @@ import HeaderOne from "@/layout/headers/HeaderOne";
 import EventSliderArea from "./EventSliderArea";
 
 const EventSlider = ({ ministriesData }: any) => {
-  console.log("ministriesdata", ministriesData);
   return (
     <>
       <HeaderOne style_1={true} style_2={true} />

@@ -7,8 +7,10 @@ import {authorType} from './authorType'
 import { heroSlider } from "./homePageType";
 import { gallery } from "./gallery";
 import { ministries } from "./ministries";
+import { leadership } from "./leadership";
+import { programs } from './programs'
 
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [blockContentType, categoryType, postType, authorType, heroSlider,gallery, ministries],
+  types: [blockContentType, categoryType, postType, authorType, heroSlider,gallery, ministries,leadership, programs],
 }

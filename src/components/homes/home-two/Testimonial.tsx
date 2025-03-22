@@ -1,16 +1,9 @@
 "use client"
 import React, { useRef, useEffect } from "react";
 import Slider from 'react-slick';
-import testimonial_data from "@/data/testimonialData";
 import Image from "next/image";
 
-import quoteIcon from "@/assets/img/testimonials/quote-icon.png";
-import testimonialImg from "@/assets/img/testimonials/testimonial-two-left.png";
-import testimonialCircle from "@/assets/img/testimonials/testimonial-two-bg.png";
 
-import testimonialThumb_1 from "@/assets/img/testimonials/testi-thumb1.jpg";
-import testimonialThumb_2 from "@/assets/img/testimonials/testi-thumb2.jpg";
-import testimonialThumb_3 from "@/assets/img/testimonials/testi-thumb3.jpg";
 
 const Testimonial = ({ style }: any) => {
 
@@ -29,8 +22,8 @@ const Testimonial = ({ style }: any) => {
             <div className="row gap-100 align-items-center">
                <div className="col-lg-5">
                   <div className="testimonial-two-image rel z-1 rmb-65">
-                     <Image src={testimonialImg} alt="Testimonials" />
-                     <Image className="circle-shape top_image_bounce" src={testimonialCircle} alt="World" />
+                     {/* <Image src={testimonialImg} alt="Testimonials" /> */}
+                     {/* <Image className="circle-shape top_image_bounce" src={testimonialCircle} alt="World" /> */}
                   </div>
                </div>
                
@@ -48,7 +41,7 @@ const Testimonial = ({ style }: any) => {
                         ref={slider2Ref}
                         className="testimonial-content-slider"
                      >
-                        {testimonial_data
+                        {/* {[]
                            .filter((item) => item.page === "home_2")
                            .map((item) => (
                               <div key={item.id} className="testimonial-content-item">
@@ -60,7 +53,7 @@ const Testimonial = ({ style }: any) => {
                                  <h4>{item.name}</h4>
                                  <span className="designation">{item.designation}</span>
                               </div>
-                           ))}
+                           ))} */}
                      </Slider>
 
                      <Slider
@@ -80,7 +73,7 @@ const Testimonial = ({ style }: any) => {
                         arrows={false}
                         className="testimonial-thumb-two"
                      >
-                        <div className="testimonial-thumb-item">
+                        {/* <div className="testimonial-thumb-item">
                            <Image src={testimonialThumb_1} alt="Author" />
                         </div>
                         <div className="testimonial-thumb-item">
@@ -88,7 +81,7 @@ const Testimonial = ({ style }: any) => {
                         </div>
                         <div className="testimonial-thumb-item">
                            <Image src={testimonialThumb_3} alt="Author" />
-                        </div>
+                        </div> */}
                      </Slider>
                   </div>
                </div>

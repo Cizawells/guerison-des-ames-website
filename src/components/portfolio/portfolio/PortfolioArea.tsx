@@ -22,7 +22,6 @@ const portfolioCounts: number[] = [images.length, 2, 5, 3, 3];
     title: image.image.alt || "Untitled", // Use alt text or a default title
     category: image.category || "Uncategorized",
   })) || [];
-  console.log("pooooooo", portfolio_data)
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabClick = (index: any) => {

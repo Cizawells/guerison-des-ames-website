@@ -16,7 +16,6 @@ async function getGalleryData() {
 
 const index = async () => {
    const galleryData = await getGalleryData();
-   console.log("galleryData", galleryData)
    return (
       <Wrapper>
          <Portfolio images={galleryData}/>

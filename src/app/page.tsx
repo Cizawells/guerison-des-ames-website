@@ -8,21 +8,21 @@ export const metadata = {
 
 async function getHeroData() {
   const heroQuery = `*[_type == "heroSlider"][0]`;
-  const testimonialsQuery = `*[_type == "testimonial"]`;
+  const leadershipQuery = `*[_type == "leadership"]`;
 
   const heroData = await sanityClient.fetch(heroQuery, {}, { next: { revalidate: 10 } });
-  const testimonialsData = await sanityClient.fetch(testimonialsQuery, {}, { next: { revalidate: 10 } });
+  const leadershipData = await sanityClient.fetch(leadershipQuery, {}, { next: { revalidate: 10 } });
 
-  return { heroData, testimonialsData };
+  return { heroData, leadershipData };
 }
 
 export default async function Index() {
-  const { heroData, testimonialsData } = await getHeroData(); // ✅ Fetching data inside Server Component
+  const { heroData, leadershipData } = await getHeroData(); // ✅ Fetching data inside Server Component
 
 
   return (
     <Wrapper>
-      <HomeOne heroData={heroData} testimonialsData={testimonialsData} />
+      <HomeOne heroData={heroData} leadershipData={leadershipData} />
     </Wrapper>
   );
 }
