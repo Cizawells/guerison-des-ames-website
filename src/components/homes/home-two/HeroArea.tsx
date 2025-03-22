@@ -38,6 +38,7 @@ const HeroSection = ({heroData}: any) => {
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             height: "100vh", // Ensure it fills the entire viewport height
+            backgroundColor: "red"
           }}
           initial={{ opacity: 0 }}  // Start with opacity 0 (invisible)
           animate={{ opacity: 1 }}   // Fade in (opacity 1)
@@ -48,22 +49,22 @@ const HeroSection = ({heroData}: any) => {
           <div className="absolute inset-0 bg-black/40"></div>
 
           {/* Centered Content (Text positioned absolutely to the motion.div) */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10" style={{paddingTop: "30%"}}>
-            <h4 className="text-4xl font-bold drop-shadow-lg">Welcome to EMGA</h4>
-            <h6 className="text-4xl font-bold drop-shadow-lg">
-              <ReactTyped
-                strings={["we", "believe", "in", "Jesus", "our", "King"]}
-                typeSpeed={50}
-                backSpeed={30}
-                loop
-              />
-            </h6>
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center z-10" style={{backgroundColor: "red"}}>
+  <h4 className="text-4xl font-bold drop-shadow-lg">Welcome to EMGA</h4>
+  <h6 className="text-4xl font-bold drop-shadow-lg">
+    <ReactTyped
+      strings={["we", "believe", "in", "Jesus", "our", "King"]}
+      typeSpeed={50}
+      backSpeed={30}
+      loop
+    />
+  </h6>
 
-            {/* Button */}
-            <div className="hero-btns pt-15 rpt-0">
-              <Link className="cr-btn" href="#">Worship with us</Link>
-            </div>
-          </div>
+  {/* Button */}
+  <div className="hero-btns pt-5">
+    <Link className="cr-btn" href="#">Worship with us</Link>
+  </div>
+</div>
         </motion.div>
       </AnimatePresence>
     </section>
