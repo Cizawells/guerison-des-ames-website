@@ -4,7 +4,7 @@ import HeaderOne from "@/layout/headers/HeaderOne"
 import Brand from "@/components/common/Brand"
 import About from "@/components/homes/home-two/About"
 import Testimonial from "@/components/homes/home-two/Testimonial"
-import CtaArea from "@/components/homes/home-three/CtaArea"
+import CtaArea from "@/components/homes/home-two/CtaArea"
 
 const InnerAbout = ({aboutusData}: any) => {
    return (
