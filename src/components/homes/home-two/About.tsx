@@ -27,7 +27,6 @@ const about_content: ContentData = {
 const { sub_title, title, desc, list } = about_content;
 
 const About = ({aboutusData}: any) => {
-   console.log("abou", aboutusData)
 
    const settings = {
       slidesToShow: 3,
@@ -77,15 +76,7 @@ const About = ({aboutusData}: any) => {
                      <p>{aboutusData.aboutText}</p>
                      <hr className="mt-40" />
 
-                     <Slider {...settings} className="about-middle-images row">
-                        {about_img_data.map((img, i) => (
-                           <div key={i} className="col-lg-4">
-                              <div className="about-middle-images-item">
-                                 <Image src={urlFor(aboutusData.image).url()} alt="About" width={200} height={400}/>
-                              </div>
-                           </div>
-                        ))}
-                     </Slider>
+                    
                      <hr />
 
                      <ul className="list-style-one pt-15">
@@ -104,6 +95,15 @@ const About = ({aboutusData}: any) => {
                         <span className="experiences-year__text">Years Experiences</span>
                      </div>
                   </div>
+                  <Slider {...settings} className="about-middle-images row">
+                        {about_img_data.map((img, i) => (
+                           <div key={i} className="col-lg-4">
+                              <div className="about-middle-images-item">
+                                 <Image src={urlFor(aboutusData.image).url()} alt="About" width={200} height={400}/>
+                              </div>
+                           </div>
+                        ))}
+                     </Slider>
                </div>
             </div>
          </div>

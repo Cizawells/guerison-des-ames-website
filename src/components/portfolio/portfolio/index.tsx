@@ -1,7 +1,5 @@
 import Breadcrumb from "@/components/common/Breadcrumb"
 import ChooseArea from "@/components/homes/home-two/ChooseArea"
-import FAQ from "@/components/homes/home-three/FAQ"
-import Testimonial from "@/components/homes/home-three/Testimonial"
 import FooterOne from "@/layout/footers/FooterTwo"
 import HeaderOne from "@/layout/headers/HeaderOne"
 import PortfolioArea from "./PortfolioArea"
