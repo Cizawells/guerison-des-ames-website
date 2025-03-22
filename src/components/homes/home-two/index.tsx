@@ -22,7 +22,7 @@ const HomeTwo = (props: any) => {
         {/* <Counter /> */}
         <Volunteer style={true} leadershipData={props.leadershipData}/>
 
-        <Event />
+        <Event programsData={props.programsData}/>
         {/* <BecomeVolunteer/> */}
         <Testimonial style={true} />
         {/* <CtaArea /> */}

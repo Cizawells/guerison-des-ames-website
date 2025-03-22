@@ -6,6 +6,7 @@ import aboutImg_1 from "@/assets/img/about/about-left1.jpg";
 import aboutImg_2 from "@/assets/img/about/about-left2.jpg";
 import aboutImg_3 from "@/assets/img/about/about-left3.jpg";
 import aboutRightImg from "@/assets/img/about/about-right.jpg";
+import { urlFor } from "../../../../sanity.image";
 
 const about_img_data: StaticImageData[] = [aboutImg_1, aboutImg_2, aboutImg_3, aboutImg_2];
 
@@ -25,7 +26,8 @@ const about_content: ContentData = {
 
 const { sub_title, title, desc, list } = about_content;
 
-const About = () => {
+const About = ({aboutusData}: any) => {
+   console.log("abou", aboutusData)
 
    const settings = {
       slidesToShow: 3,
@@ -70,16 +72,16 @@ const About = () => {
                   <div className="about-us-content-part mb-50">
                      <div className="section-title mb-50">
                         <span className="section-title__subtitle mb-10">{sub_title}</span>
-                        <h2>{title}</h2>
+                        <h2>{aboutusData.title}</h2>
                      </div>
-                     <p>{desc}</p>
+                     <p>{aboutusData.aboutText}</p>
                      <hr className="mt-40" />
 
                      <Slider {...settings} className="about-middle-images row">
                         {about_img_data.map((img, i) => (
                            <div key={i} className="col-lg-4">
                               <div className="about-middle-images-item">
-                                 <Image src={img} alt="About" />
+                                 <Image src={urlFor(aboutusData.image).url()} alt="About" width={200} height={400}/>
                               </div>
                            </div>
                         ))}
@@ -87,16 +89,16 @@ const About = () => {
                      <hr />
 
                      <ul className="list-style-one pt-15">
-                        {list.map((li, index) => (
+                        {/* {list.map((li, index) => (
                            <li key={index}>{li}</li>
-                        ))}
+                        ))} */}
                      </ul>
                   </div>
                </div>
                
                <div className="col-xl-6">
                   <div className="about-us-image-part mb-65 rel">
-                     <Image src={aboutRightImg} alt="About" />
+                  <Image src={urlFor(aboutusData.image).url()} alt="About" width={200} height={600}/>
                      <div className="experiences-year" style={{ backgroundImage: `url(/assets/img/about/experiences.jpg)` }}>
                         <span className="experiences-year__number">25</span>
                         <span className="experiences-year__text">Years Experiences</span>

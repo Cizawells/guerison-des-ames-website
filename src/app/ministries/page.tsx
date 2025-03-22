@@ -19,7 +19,6 @@ async function getMinistries() {
 }
 const index = async () => {
   const { ministriesData } = await getMinistries(); // ✅ Fetching data inside Server Component
-  // console.log("mmmmmmmmm", ministriesData);
   return (
     <Wrapper>
       <EventSlider ministriesData={ministriesData} />

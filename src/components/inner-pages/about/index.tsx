@@ -6,14 +6,14 @@ import About from "@/components/homes/home-two/About"
 import Testimonial from "@/components/homes/home-two/Testimonial"
 import CtaArea from "@/components/homes/home-three/CtaArea"
 
-const InnerAbout = () => {
+const InnerAbout = ({aboutusData}: any) => {
    return (
       <>
          <HeaderOne style_1={true} style_2={true} />
          <main>
             <Breadcrumb page_title="About Us" page_list="About" style={true} />
             {/* <Brand style={true} /> */}
-            <About />
+            <About aboutusData={aboutusData}/>
             {/* <Features /> */}
             {/* <Volunteer style={true} /> */}
             {/* <Testimonial style={false} /> */}

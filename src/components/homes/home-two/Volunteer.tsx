@@ -3,7 +3,6 @@ import Image from "next/image"
 import { urlFor } from "../../../../sanity.image"
 
 const Volunteer = ({ style, leadershipData }: any) => {
-console.log("leader", leadershipData)
       // .slice(0, style ? 4 : 8);
 
    return (
