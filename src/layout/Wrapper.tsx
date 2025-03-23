@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify"; // ✅ Import `toast`
+import "react-toastify/dist/ReactToastify.css"; // ✅ Import CSS
 import { animationCreate } from "@/utils/utils";
 import ScrollToTop from "@/components/common/ScrollToTop";
 
@@ -19,12 +20,12 @@ const Wrapper = ({ children }: any) => {
         return () => clearTimeout(timer);
     }, []);
 
+    return (
+        <>
+            {children}
+            <ScrollToTop />
+        </>
+    );
+};
 
-    return <>
-        <ToastContainer position="top-center" autoClose={3000}/>
-        {children}
-        <ScrollToTop />
-    </>;
-}
-
-export default Wrapper
+export default Wrapper;

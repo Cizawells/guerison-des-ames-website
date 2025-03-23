@@ -10,8 +10,9 @@ import { ministries } from "./ministries";
 import { leadership } from "./leadership";
 import { programs } from './programs'
 import { about } from './about'
+import { contact } from './contact'
 
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [blockContentType, categoryType, postType, authorType, heroSlider,gallery, ministries,leadership, programs, about],
+  types: [blockContentType, categoryType, postType, authorType, heroSlider,gallery, ministries,leadership, programs, about, contact],
 }

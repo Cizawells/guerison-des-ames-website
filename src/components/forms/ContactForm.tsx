@@ -40,7 +40,11 @@ const ContactForm = () => {
    const onSubmit = (data: FormData) => {
       console.log("dtaaaaaaaaaa", data)
   
-      emailjs.send('service_yyj0elv','template_t4emzss', templateParams)
+      emailjs.send('service_yyj0elv','template_t4emzss',  {
+         to_email: "cizowells@gmail.com",  // Must match EmailJS template variable
+         name: data.name,
+         message: `${data.email} - ${data.message}`},
+        "XvBosMTU7SXxowPIc")
 	.then(function(response) {
 	   console.log('SUCCESS!', response.status, response.text);
 	}, function(err) {

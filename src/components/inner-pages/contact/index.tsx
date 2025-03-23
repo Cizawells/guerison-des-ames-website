@@ -7,15 +7,15 @@ import ContactInfo from "./ContactInfo"
 import LocationMap from "./LocationMap"
 
 
-const Contact = () => {
+const Contact = ({contactData}: any) => {
    return (
       <>
          <HeaderOne style_1={true} style_2={true} />
          <main>
             <Breadcrumb page_title="Contact Us" page_list="Contact" style={false} />
             {/* <Brand style={true} /> */}
-            <ContactArea/>
-            <ContactInfo/>
+            <ContactArea />
+            <ContactInfo contactData={contactData}/>
             <LocationMap/>
          </main>
          <FooterOne />

@@ -1,13 +1,27 @@
 import Contact from "@/components/inner-pages/contact";
 import Wrapper from "@/layout/Wrapper";
+import { sanityClient } from "../../../sanity.client";
 
 export const metadata = {
    title: "Contact Us Charite - Charity & Donation React Next js Template",
 };
-const index = () => {
+
+
+async function getContactData() {
+   const query = `*[_type == "about"][0]`; // Fetch first gallery
+   const leadershipQuery = `*[_type == "leadership"]`;
+   const contactData = await sanityClient.fetch(query, {}, { next: { revalidate: 10 } });
+ 
+   return {
+      contactData,
+   };
+ }
+
+const index = async () => {
+   const {contactData} = await getContactData();
    return (
       <Wrapper>
-         <Contact />
+         <Contact contactData={contactData}/>
       </Wrapper>
    )
 }

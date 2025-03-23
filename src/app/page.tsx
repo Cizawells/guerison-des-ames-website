@@ -3,6 +3,7 @@ import "@/assets/css/responsive.css";  // Add this line to import globally
 
 import Wrapper from "@/layout/Wrapper";
 import { sanityClient } from "../../sanity.client";
+import { ToastContainer } from "react-toastify";
 
 export const metadata = {
   title: "Guerison des ames church",
@@ -26,6 +27,8 @@ export default async function Index() {
 
   return (
     <Wrapper>
+            <ToastContainer position="top-center" autoClose={3000} />
+
       <HomeOne heroData={heroData} leadershipData={leadershipData} programsData={programsData}/>
     </Wrapper>
   );

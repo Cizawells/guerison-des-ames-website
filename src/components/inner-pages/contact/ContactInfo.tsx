@@ -54,7 +54,7 @@ const contact_data: DataType[] = [
    },
 ]
 
-const ContactInfo = () => {
+const ContactInfo = ({contactData}: any) => {
    return (
       <div className="contact-info-area pb-85">
          <div className="container">
