@@ -2,12 +2,12 @@ const Breadcrumb = ({ page_title, page_list, style }: any) => {
   return (
     <div
       className="page-banner-area bgs-cover overlay text-white py-165 rpy-125 rmt-65"
-      style={{ backgroundImage: `url(assets/img/background/page-banner.jpg)` }}
+      style={{ backgroundImage: `url(assets/img/background/1.jpg)` }}
     >
       <div className="container">
         <div className="row justify-content-center">
           <div className={`${style ? "col-lg-12" : "col-xl-7 col-lg-8"}`}>
-            <div className="breadcrumb-inner text-center">
+            <div className="breadcrumb-inner text-center"><p className="yyth5"></p>
               <h2 className="page-title">{page_title}</h2>
               <ul className="page-list">
                 <li>
