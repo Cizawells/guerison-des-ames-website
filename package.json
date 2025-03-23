@@ -16,6 +16,7 @@
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.79.0",
     "bootstrap": "^5.3.2",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^12.4.7",
     "imagesloaded": "^5.0.0",
     "motion": "^12.4.7",

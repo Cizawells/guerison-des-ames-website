@@ -30,7 +30,8 @@ const portfolioCounts: number[] = [images.length, 2, 5, 3, 3];
 
   const renderPortfolioItems = () => {
     const endIndex = portfolioCounts[activeTab];
-    return portfolio_data.slice(0, endIndex).map((item) => (
+    // return portfolio_data.slice(0, endIndex).map((item) => (
+    return portfolio_data.map((item) => (
       <div key={item.id} className="col-xl-4 col-md-6 item cleanWater foodHealth">
         <div className="portfolio-item image">
           <Image src={item.thumb} alt="Portfolio" width={300} height={300}/>

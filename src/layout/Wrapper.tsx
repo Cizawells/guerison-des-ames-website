@@ -21,9 +21,9 @@ const Wrapper = ({ children }: any) => {
 
 
     return <>
+        <ToastContainer position="top-center" autoClose={3000}/>
         {children}
         <ScrollToTop />
-        <ToastContainer position="top-center" />
     </>;
 }
 

@@ -6,6 +6,7 @@ import ContactArea from "./ContactArea"
 import ContactInfo from "./ContactInfo"
 import LocationMap from "./LocationMap"
 
+
 const Contact = () => {
    return (
       <>
