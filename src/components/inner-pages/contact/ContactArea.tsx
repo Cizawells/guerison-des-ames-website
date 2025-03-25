@@ -1,14 +1,14 @@
 import ContactForm from "@/components/forms/ContactForm"
 import FaqContent from "@/components/common/FaqContent"
 
-const ContactArea = () => {
+const ContactArea = ({contactData}: any) => {
    return (
       <div className="contact-page-area overflow-hidden py-120 rpt-100">
          <div className="container">
             <div className="row gap-60 align-items-center">
                <div className="col-lg-6">
                   <div className="faq-three-left-part mb-20 rel rmb-75">
-                    <FaqContent/>
+                    <FaqContent contactData={contactData}/>
                   </div>
                </div>
                <div className="col-lg-6">
