@@ -11,7 +11,7 @@ export const metadata = {
 
 async function getHeroData() {
   const heroQuery = `*[_type == "heroSlider"][0]`;
-  const leadershipQuery = `*[_type == "leadership"]`;
+  const leadershipQuery = `*[_type == "leadership"] | order(_createdAt desc)`;
   const ProgramsQuery = `*[_type == "programs"]`;
 
   const heroData = await sanityClient.fetch(heroQuery, {}, { next: { revalidate: 10 } });
