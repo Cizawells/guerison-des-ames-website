@@ -2,11 +2,12 @@ import Image from "next/image"
 import Count from "./Count"
 
 import faqThumb from "@/assets/img/about/1.jpg"
+import { urlFor } from "../../../sanity.image"
 
-const FaqContent = () => {
+const FaqContent = ({contactData}:any) => {
    return (
       <>
-         <Image src={faqThumb} alt="Man" />
+         <Image src={urlFor(contactData.image).url()} alt="Man" width={400} height={300}/>
          <div className="experiences-years">
             <span className="experiences-years__number">25</span>
             <span className="experiences-years__text">Years</span>

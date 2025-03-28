@@ -14,7 +14,7 @@ const Contact = ({contactData}: any) => {
          <main>
             <Breadcrumb page_title="Contact Us" page_list="Contact" style={false} />
             {/* <Brand style={true} /> */}
-            <ContactArea />
+            <ContactArea contactData={contactData}/>
             <ContactInfo contactData={contactData}/>
             <LocationMap/>
          </main>

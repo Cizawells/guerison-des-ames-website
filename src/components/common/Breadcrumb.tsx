@@ -2,7 +2,7 @@ const Breadcrumb = ({ page_title, page_list, style }: any) => {
   return (
     <div
       className="page-banner-area bgs-cover overlay text-white py-165 rpy-125 rmt-65"
-      style={{ backgroundImage: `url(assets/img/background/1.jpg)` }}
+      style={{ backgroundImage: `url(/img/1.jpg)` }}
     >
       <div className="container">
         <div className="row justify-content-center">

@@ -8,8 +8,7 @@ export const metadata = {
 
 
 async function getContactData() {
-   const query = `*[_type == "about"][0]`; // Fetch first gallery
-   const leadershipQuery = `*[_type == "leadership"]`;
+   const query = `*[_type == "contact"][0]`; // Fetch first gallery
    const contactData = await sanityClient.fetch(query, {}, { next: { revalidate: 10 } });
  
    return {
