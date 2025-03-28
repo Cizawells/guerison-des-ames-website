@@ -22,7 +22,7 @@ async function getHeroData() {
   const leadershipData = await sanityClient.fetch(
     leadershipQuery,
     {},
-    { cache: "no-store" }
+    { next: { revalidate: 10 } }
   );
   const programsData = await sanityClient.fetch(
     ProgramsQuery,
