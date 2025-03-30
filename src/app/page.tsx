@@ -11,7 +11,8 @@ export const metadata = {
 
 async function getHeroData() {
   const heroQuery = `*[_type == "heroSlider"][0]`;
-  const leadershipQuery = `*[_type == "leadership"] | order(_createdAt desc)`;
+  const leadershipQuery = `*[_type == "leadership"] | order(name == "Mberabagabo Manasse", _createdAt desc)`;
+
   const ProgramsQuery = `*[_type == "programs"]`;
 
   const heroData = await sanityClient.fetch(
@@ -22,7 +23,7 @@ async function getHeroData() {
   const leadershipData = await sanityClient.fetch(
     leadershipQuery,
     {},
-    { next: { revalidate: 10 } }
+    {  cache: "no-store" }
   );
   const programsData = await sanityClient.fetch(
     ProgramsQuery,

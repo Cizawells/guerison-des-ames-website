@@ -1,8 +1,11 @@
-const Breadcrumb = ({ page_title, page_list, style }: any) => {
+import { urlFor } from "../../../sanity.image";
+
+const Breadcrumb = ({ page_title, page_list, style, url }: any) => {
+  console.log("urlll", url)
   return (
     <div
       className="page-banner-area bgs-cover overlay text-white py-165 rpy-125 rmt-65"
-      style={{ backgroundImage: `url(/img/1.jpg)` }}
+      style={{ backgroundImage:   `url(https://cdn.sanity.io/images/qvy0ccge/production/992939497c4273e865cd2249103c2f8495ba3fe5-5760x3840.jpg)`}}
     >
       <div className="container">
         <div className="row justify-content-center">

@@ -21,36 +21,33 @@ const contact_data: DataType[] = [
       title: "Phone Number",
       contact_info: [
          {
-            info_link: "callto:+(321)984754",
-            info_title: "+ (321) 984 754"
+            info_link: "callto:+25776720000",
+            info_title: "+ 25776720000"
          },
          {
-            info_link: "callto:+1-212-9876543",
-            info_title: "+1-212-9876543"
+            info_link: "callto:+25761078184",
+            info_title: "+ 25761078184"
          }
       ]
    },
    {
       id: 2,
       item_bg: "contact-info-item--yellow",
-      icon: "flaticon-phone-call",
+      icon: "Flaticon envelope",
       title: "Email Address",
       contact_info: [
          {
-            info_link: "mailto:info1234@gmail.com",
-            info_title: "info1234@gmail.com"
+            info_link: "info@guerisondesames.org",
+            info_title: "info@guerisondesames.org"
          },
-         {
-            info_link: "mailto:test1234@gmail.com",
-            info_title: "test1234@gmail.com"
-         }
+       
       ]
    },
    {
       id: 3,
       icon: "flaticon-pin",
-      title: "Office Address",
-      contact_info_text: (<>2118 Thornridge Cir. Syracuse <br />Connecticut 35624</>),
+      title: "Address",
+      contact_info_text: (<>Nyakabiga, Bujumbura Mairie <br /></>),
    },
 ]
 

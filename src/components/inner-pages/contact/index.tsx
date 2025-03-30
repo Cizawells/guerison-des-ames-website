@@ -12,7 +12,7 @@ const Contact = ({contactData}: any) => {
       <>
          <HeaderOne style_1={true} style_2={true} />
          <main>
-            <Breadcrumb page_title="Contact Us" page_list="Contact" style={false} />
+            <Breadcrumb page_title="Contact Us" page_list="Contact" style={false} url={contactData.breadcrumbImage}/>
             {/* <Brand style={true} /> */}
             <ContactArea contactData={contactData}/>
             <ContactInfo contactData={contactData}/>

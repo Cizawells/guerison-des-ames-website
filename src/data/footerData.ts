@@ -64,10 +64,10 @@ const footer_data: DataType[] = [
     page: "home_2",
     widget_title: "Quick links",
     footer_link: [
-      { link: "#", link_title: "Causes" },
-      { link: "#", link_title: "About" },
-      { link: "#", link_title: "New campaign" },
-      { link: "#", link_title: "Site map" },
+      { link: "/donate", link_title: "Donate" },
+      { link: "/ministries", link_title: "Ministries" },
+      { link: "/about", link_title: "About" },
+      { link: "/contact", link_title: "Contact" },
     ],
   },
 ];

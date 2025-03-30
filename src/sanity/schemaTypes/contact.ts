@@ -54,6 +54,22 @@ export const contact = defineType({
         }),
       ],
     }),
+    defineField({
+      name: "breadcrumbImage",
+      title: "BreadCrumb Image",
+      type: "image",
+      options: {
+        hotspot: true, // Allows cropping
+      },
+      fields: [
+        defineField({
+          name: "alt",
+          title: "Alternative Text",
+          type: "string",
+          description: "Describe the image for accessibility",
+        }),
+      ],
+    }),
    
   ],
 });

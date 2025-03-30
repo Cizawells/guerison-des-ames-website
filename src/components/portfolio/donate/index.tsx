@@ -45,7 +45,7 @@ const Donate = () => {
       </div>
 
       <div className="text-center">
-        <p>For any questions, please contact us at <strong>support@example.com</strong></p>
+        <p>For any questions, please contact us at <strong>info@guerisondesames.org</strong></p>
       </div>
     </div>
          </main>
