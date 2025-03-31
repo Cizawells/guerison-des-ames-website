@@ -3,8 +3,9 @@ import Wrapper from "@/layout/Wrapper";
 import { sanityClient } from "../../../sanity.client";
 
 export const metadata = {
-   title: "About Charite - Charity & Donation React Next js Template",
-};
+   title: "Guerison des ames church Nyakabiga",
+ };
+ 
 
 async function getAboutData() {
    const query = `*[_type == "about"][0]`; // Fetch first gallery

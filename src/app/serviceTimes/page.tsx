@@ -2,8 +2,9 @@ import ServiceTimes from "@/components/inner-pages/serviceTimes";
 import Wrapper from "@/layout/Wrapper";
 
 export const metadata = {
-   title: "Contact Us Charite - Charity & Donation React Next js Template",
-};
+   title: "Guerison des ames church Nyakabiga",
+ };
+ 
 const index = () => {
    return (
       <Wrapper>

@@ -2,8 +2,9 @@ import Donate from "@/components/portfolio/donate";
 import Wrapper from "@/layout/Wrapper";
 
 export const metadata = {
-   title: "Donate Charite - Charity & Donation React Next js Template",
-};
+   title: "Guerison des ames church Nyakabiga",
+ };
+ 
 const index = () => {
    return (
       <Wrapper>

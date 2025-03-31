@@ -6,7 +6,7 @@ import { ToastContainer } from "react-toastify";
 import { sanityClient } from "../../sanity.client";
 
 export const metadata = {
-  title: "Guerison des ames church",
+  title: "Guerison des ames church Nyakabiga",
 };
 
 async function getHeroData() {

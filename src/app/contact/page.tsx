@@ -3,8 +3,9 @@ import Wrapper from "@/layout/Wrapper";
 import { sanityClient } from "../../../sanity.client";
 
 export const metadata = {
-   title: "Contact Us Charite - Charity & Donation React Next js Template",
-};
+   title: "Guerison des ames church Nyakabiga",
+ };
+ 
 
 
 async function getContactData() {
