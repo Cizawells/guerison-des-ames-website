@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="description" content="Charite - Charity & Donation React Next js Template for various types of Sass Products, Software, Startups, App showcases,s and related products/services" />
-        <link rel="icon" href="/favicon.png" sizes="any" />
+        <link rel="icon" href="/LOGO bien.png" sizes="any" />
       </head>
       <body suppressHydrationWarning={true} className={` ${body.variable} ${heading.variable} ${script.variable} `}>
         <div className="wrapper">

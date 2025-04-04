@@ -36,13 +36,13 @@ const Volunteer = ({ style, leadershipData = [] }: any) => {
               <div className="valunteer-two-item">
                 <div
                   className="valunteer-two-item__img"
-                  style={{ width: "300px", height: "270px" }}
+                  style={{ width: "300px", height: "250px" }}
                 >
                   <Image
                     src={urlFor(item.image).url()}
                     alt="Volunteer"
                     width={300}
-                    height={270}
+                    height={250}
                     style={{ width: "100%", height: "100%" }}
                   />
                 </div>
