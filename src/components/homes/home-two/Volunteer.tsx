@@ -22,8 +22,8 @@ const Volunteer = ({ style, leadershipData=[] }: any) => {
                {leadershipData.map((item: any) => (
                   <div key={item.id} className="col-xl-3 col-sm-6">
                      <div className="valunteer-two-item">
-                        <div className="valunteer-two-item__img" style={{width: "300px", height: "270px"}}>
-                           <Image src={urlFor(item.image).url()} alt="Volunteer" width={300} height={270} style={{width: "100%", height: "100%"}}/>
+                        <div className="valunteer-two-item__img" style={{width: "300px", height: "250px"}}>
+                           <Image src={urlFor(item.image).url()} alt="Volunteer" width={300} height={250} style={{width: "100%", height: "100%"}}/>
                         </div>
                         <div className={`valunteer-two-item__des ${item.item_bg}`}>
                            <h5>{item.name}</h5>
