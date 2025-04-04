@@ -68,5 +68,6 @@ const Event = forwardRef((props: any, ref: React.Ref<HTMLDivElement>) => {
     </div>
   );
 });
-
+// ✅ Assign a display name
+Event.displayName = "Event";
 export default Event;
