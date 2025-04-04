@@ -1,41 +1,62 @@
 // import volunteer_data from "@/data/volunteerData"
-import Image from "next/image"
-import { urlFor } from "../../../../sanity.image"
+import Image from "next/image";
+import { urlFor } from "../../../../sanity.image";
 
-const Volunteer = ({ style, leadershipData=[] }: any) => {
-      // .slice(0, style ? 4 : 8);
+const Volunteer = ({ style, leadershipData = [] }: any) => {
+  // .slice(0, style ? 4 : 8);
 
-   return (
-      <div className={`volunteer-area-two pb-90 rel z-1 ${style ? "pt-120" : ""}`}>
-         <div className="container">
-            <div className="row justify-content-center">
-               <div className="col-xl-6 col-lg-8 col-md-10">
-                  <div className="section-title text-center mb-60">
-                     <span className="section-title__subtitle mb-10">Our Leadership team</span>
-                     {style ? <h3>Meet <span>With Pastors</span></h3> : <h2>Our <span>Pastors</span> Style 02</h2>}
-                     {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati consectetur adipisicing</p> */}
-                  </div>
-               </div>
+  return (
+    <div
+      className={`volunteer-area-two pb-90 rel z-1 ${style ? "pt-120" : ""}`}
+    >
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-xl-6 col-lg-8 col-md-10">
+            <div className="section-title text-center mb-60">
+              <span className="section-title__subtitle mb-10">
+                Our Leadership team
+              </span>
+              {style ? (
+                <h3>
+                  Meet <span>With Pastors</span>
+                </h3>
+              ) : (
+                <h2>
+                  Our <span>Pastors</span> Style 02
+                </h2>
+              )}
+              {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati consectetur adipisicing</p> */}
             </div>
-            
-            <div className="row justify-content-center">
-               {leadershipData.map((item: any) => (
-                  <div key={item.id} className="col-xl-3 col-sm-6">
-                     <div className="valunteer-two-item">
-                        <div className="valunteer-two-item__img" style={{width: "300px", height: "270px"}}>
-                           <Image src={urlFor(item.image).url()} alt="Volunteer" width={300} height={270} style={{width: "100%", height: "100%"}}/>
-                        </div>
-                        <div className={`valunteer-two-item__des ${item.item_bg}`}>
-                           <h5>{item.name}</h5>
-                           <span>{item.title}</span>
-                        </div>
-                     </div>
-                  </div>
-               ))}
+          </div>
+        </div>
+
+        <div className="row justify-content-center">
+          {leadershipData.map((item: any) => (
+            <div key={item.name} className="col-xl-3 col-sm-6">
+              <div className="valunteer-two-item">
+                <div
+                  className="valunteer-two-item__img"
+                  style={{ width: "300px", height: "270px" }}
+                >
+                  <Image
+                    src={urlFor(item.image).url()}
+                    alt="Volunteer"
+                    width={300}
+                    height={270}
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                </div>
+                <div className={`valunteer-two-item__des ${item.item_bg}`}>
+                  <h5>{item.name}</h5>
+                  <span>{item.title}</span>
+                </div>
+              </div>
             </div>
-         </div>
+          ))}
+        </div>
       </div>
-   )
-}
+    </div>
+  );
+};
 
-export default Volunteer
+export default Volunteer;

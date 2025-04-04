@@ -1,19 +1,20 @@
 "use client";
-import { useState, useEffect } from "react";
-import Link from "next/link";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { ReactTyped } from "react-typed";
-import { motion, AnimatePresence } from "framer-motion";
 import { urlFor } from "../../../../sanity.image";
 
-const HeroSection = ({heroData}: any) => {
+const HeroSection = ({ heroData, eventSectionRef }: any) => {
   // const images: any = [
-   
+
   // ];
-  const images: any = heroData ? [
-    urlFor(heroData.imageOne).url(),
-    urlFor(heroData.imageTwo).url(),
-    urlFor(heroData.imageThree).url(),
-  ] : [];
+  const images: any = heroData
+    ? [
+        urlFor(heroData.imageOne).url(),
+        urlFor(heroData.imageTwo).url(),
+        urlFor(heroData.imageThree).url(),
+      ]
+    : [];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -24,6 +25,14 @@ const HeroSection = ({heroData}: any) => {
 
     return () => clearInterval(interval);
   }, [images.length]);
+
+  // Specify the type of ref as HTMLDivElement
+
+  const handleScrollToEvent = () => {
+    if (eventSectionRef.current) {
+      eventSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section className="relative w-full h-screen overflow-hidden">
@@ -39,9 +48,9 @@ const HeroSection = ({heroData}: any) => {
             backgroundRepeat: "no-repeat",
             height: "100vh", // Ensure it fills the entire viewport height
           }}
-          initial={{ opacity: 0 }}  // Start with opacity 0 (invisible)
-          animate={{ opacity: 1 }}   // Fade in (opacity 1)
-          exit={{ opacity: 0 }}      // Fade out (opacity 0)
+          initial={{ opacity: 0 }} // Start with opacity 0 (invisible)
+          animate={{ opacity: 1 }} // Fade in (opacity 1)
+          exit={{ opacity: 0 }} // Fade out (opacity 0)
           transition={{ duration: 1, ease: "easeInOut" }}
         >
           {/* Dark Overlay for Better Readability */}
@@ -49,7 +58,9 @@ const HeroSection = ({heroData}: any) => {
 
           {/* Centered Content (Text positioned absolutely to the motion.div) */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 responsive-padding">
-            <h4 className="text-4xl font-bold drop-shadow-lg">Welcome to EMGA</h4>
+            <h4 className="text-4xl font-bold drop-shadow-lg">
+              Welcome to EMGA
+            </h4>
             <h6 className="text-4xl font-bold drop-shadow-lg">
               <ReactTyped
                 strings={["we", "believe", "in", "Jesus", "our", "King"]}
@@ -61,7 +72,9 @@ const HeroSection = ({heroData}: any) => {
 
             {/* Button */}
             <div className="hero-btns pt-15 rpt-0">
-              <Link className="cr-btn" href="#">Worship with us</Link>
+              <button className="cr-btn" onClick={handleScrollToEvent}>
+                Worship with uss
+              </button>
             </div>
           </div>
         </motion.div>
