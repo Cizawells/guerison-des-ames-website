@@ -11,7 +11,7 @@ const Event = ({programsData = []}: any) => {
                <div className="col-xl-7 col-lg-8 col-md-10">
                   <div className="section-title text-center mb-55">
                      <span className="section-title__subtitle mb-10">Our Programs</span>
-                     <h3>Join us in ou different <span>Programs</span></h3>
+                     <h3>Join us in our different <span>Programs</span></h3>
                   </div>
                </div>
             </div>
