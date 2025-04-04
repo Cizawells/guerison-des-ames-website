@@ -73,7 +73,7 @@ const HeroSection = ({ heroData, eventSectionRef }: any) => {
             {/* Button */}
             <div className="hero-btns pt-15 rpt-0">
               <button className="cr-btn" onClick={handleScrollToEvent}>
-                Worship with uss
+                Worship with us
               </button>
             </div>
           </div>
