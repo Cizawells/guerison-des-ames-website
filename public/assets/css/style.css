@@ -8112,3 +8112,6 @@ ul li {
   background: -o-linear-gradient(265deg, rgba(35, 35, 35, 0.41) -55%, #232323 55%);
   background: linear-gradient(185deg, rgba(35, 35, 35, 0.41) -55%, #232323 55%);
 }
+.dark-bg {
+  filter: brightness(50%);
+}

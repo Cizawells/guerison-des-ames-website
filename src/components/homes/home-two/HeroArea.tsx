@@ -40,7 +40,7 @@ const HeroSection = ({ heroData, eventSectionRef }: any) => {
       <AnimatePresence mode="wait">
         <motion.div
           key={currentImageIndex}
-          className="absolute inset-0 w-full h-full flex items-center justify-center text-white text-center bg-black/40"
+          className="absolute inset-0 w-full h-full flex items-center justify-center text-white text-center bg-black/40 dark-bg"
           style={{
             backgroundImage: `url(${images[currentImageIndex]})`,
             backgroundSize: "cover",
@@ -48,6 +48,7 @@ const HeroSection = ({ heroData, eventSectionRef }: any) => {
             backgroundRepeat: "no-repeat",
             opacity: 5,
             height: "100vh", // Ensure it fills the entire viewport height
+            // filter: brightness(50%)
           }}
           initial={{ opacity: 0 }} // Start with opacity 0 (invisible)
           animate={{ opacity: 2 }} // Fade in (opacity 1)
@@ -59,10 +60,10 @@ const HeroSection = ({ heroData, eventSectionRef }: any) => {
 
           {/* Centered Content (Text positioned absolutely to the motion.div) */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 responsive-padding">
-            <h4 className="fs-3 font-bold drop-shadow-lg">
+            <h4 className="text-4xl font-bold drop-shadow-lg" style={{fontSize: "50px"}}>
               Welcome to EMGA
             </h4>
-            <h6 className="text-4xl font-bold drop-shadow-lg">
+            <h6 className="text-4xl font-bold drop-shadow-lg" style={{fontSize: "25px"}}>
               <ReactTyped
                 strings={["we", "believe", "in", "Jesus", "our", "King"]}
                 typeSpeed={50}

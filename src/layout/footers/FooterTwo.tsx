@@ -99,7 +99,7 @@ const FooterTwo = ({footerGalleryData}: any) => {
                   <h4 className="widget-title">{gallery_title}</h4>
                   <div className="gallery-photos">
                     {gallery.map((gallery, index) => (
-                      <a key={index} href="assets/img/footer/gallery-two1.jpg">
+                      <a key={index} href={gallery.url} target="_blank" rel="noopener noreferrer">
                         <Image src={gallery?.url} alt="Gallery" width={50} height={50}/>
                       </a>
                     ))}
