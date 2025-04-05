@@ -19,7 +19,19 @@ const Donate = () => {
     padding: "20px",
     width:"100%"
   }}>
-      <span className="text-center section-title__subtitle mb-10">Donate & Support</span>
+      {/* <h2 className="text-center section-title__subtitle mb-10">Donate & Support</h2> */}
+      <div className="row justify-content-center">
+          <div className="col-xl-6 col-lg-8 col-md-10">
+            <div className="section-title text-center mb-60">
+              <span className="section-title__subtitle mb-10" style={{fontSize: "25px"}}>
+                Donate & Support
+              </span>
+               
+           
+              {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati consectetur adipisicing</p> */}
+            </div>
+          </div>
+        </div>
       {/* <span className="section-title__subtitle mb-10">
                 Our Leadership team
               </span> */}
@@ -44,7 +56,7 @@ const Donate = () => {
         <h5>Mobile Transfer</h5>
         <ul className="list-group" style={{ backgroundColor: "transparent", color: "white"}}>
           <li className="list-group-item" style={{ backgroundColor: "transparent", color: "white"}}>
-            <strong>CashApp:</strong> $Irakoze Richard
+            <strong>CashApp:</strong> +1 (202) 590-8872 - Irakoze Richard
           </li>
         </ul>
       </div>
