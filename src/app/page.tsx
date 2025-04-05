@@ -13,7 +13,7 @@ async function getHeroData() {
   const heroQuery = `*[_type == "heroSlider"][0]`;
   const leadershipQuery = `*[_type == "leadership"] | order(_createdAt desc)`;
   const ProgramsQuery = `*[_type == "programs"]`;
-
+  const footerGalleryQuery = `*[_type == "footerGallery"]`; // Fetch first gallery
   const heroData = await sanityClient.fetch(
     heroQuery,
     {},
@@ -29,12 +29,17 @@ async function getHeroData() {
     {},
     { next: { revalidate: 10 } }
   );
+  const footerGalleryData = await sanityClient.fetch(
+    ProgramsQuery,
+    {},
+    { next: { revalidate: 10 } }
+  );
 
-  return { heroData, leadershipData, programsData };
+  return { heroData, leadershipData, programsData, footerGalleryData };
 }
 
 export default async function Index() {
-  const { heroData, leadershipData, programsData } = await getHeroData(); // ✅ Fetching data inside Server Component
+  const { heroData, leadershipData, programsData, footerGalleryData } = await getHeroData(); // ✅ Fetching data inside Server Component
 
   return (
     <Wrapper>
@@ -44,6 +49,7 @@ export default async function Index() {
         heroData={heroData}
         leadershipData={leadershipData}
         programsData={programsData}
+        footerGalleryData={footerGalleryData}
       />
     </Wrapper>
   );

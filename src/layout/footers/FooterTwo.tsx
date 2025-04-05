@@ -13,6 +13,7 @@ import footerGallery_3 from "@/assets/img/footer/gallery-two3.jpg";
 import footerGallery_4 from "@/assets/img/footer/gallery-two4.jpg";
 import footerGallery_5 from "@/assets/img/footer/gallery-two5.jpg";
 import footerGallery_6 from "@/assets/img/footer/gallery-two6.jpg";
+import { urlFor } from "../../../sanity.image";
 
 interface ContentType {
   footer_about_text: string;
@@ -49,7 +50,13 @@ const {
   copyright_text,
 } = footer_content;
 
-const FooterTwo = () => {
+const FooterTwo = ({footerGalleryData}: any) => {
+    const gallery: any[] = footerGalleryData?.map((image: any, index: number) => ({
+      id: index + 1,
+      url: urlFor(image?.image).url(), // Get image URL or fallback
+    })) || [];
+
+    console.log("now gallery", gallery)
   return (
     <footer className="footer-area footer-area--two text-white pt-120">
       <div className="container">
@@ -93,7 +100,7 @@ const FooterTwo = () => {
                   <div className="gallery-photos">
                     {gallery.map((gallery, index) => (
                       <a key={index} href="assets/img/footer/gallery-two1.jpg">
-                        <Image src={gallery} alt="Gallery" />
+                        <Image src={gallery?.url} alt="Gallery" width={50} height={50}/>
                       </a>
                     ))}
                   </div>

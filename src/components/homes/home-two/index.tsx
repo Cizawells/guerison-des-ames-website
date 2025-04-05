@@ -32,7 +32,7 @@ const HomeTwo = (props: any) => {
         <FAQ heroData={props.heroData} />
         {/* <Brand style={false} /> */}
       </main>
-      <FooterTwo />
+      <FooterTwo footerGalleryData={props.footerGalleryData}/>
     </>
   );
 };

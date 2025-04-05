@@ -40,25 +40,26 @@ const HeroSection = ({ heroData, eventSectionRef }: any) => {
       <AnimatePresence mode="wait">
         <motion.div
           key={currentImageIndex}
-          className="absolute inset-0 w-full h-full flex items-center justify-center text-white text-center"
+          className="absolute inset-0 w-full h-full flex items-center justify-center text-white text-center bg-black/40"
           style={{
             backgroundImage: `url(${images[currentImageIndex]})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
+            opacity: 5,
             height: "100vh", // Ensure it fills the entire viewport height
           }}
           initial={{ opacity: 0 }} // Start with opacity 0 (invisible)
-          animate={{ opacity: 1 }} // Fade in (opacity 1)
+          animate={{ opacity: 2 }} // Fade in (opacity 1)
           exit={{ opacity: 0 }} // Fade out (opacity 0)
           transition={{ duration: 1, ease: "easeInOut" }}
         >
           {/* Dark Overlay for Better Readability */}
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/60" style={{opacity: 5}}></div>
 
           {/* Centered Content (Text positioned absolutely to the motion.div) */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 responsive-padding">
-            <h4 className="text-4xl font-bold drop-shadow-lg">
+            <h4 className="fs-3 font-bold drop-shadow-lg">
               Welcome to EMGA
             </h4>
             <h6 className="text-4xl font-bold drop-shadow-lg">
