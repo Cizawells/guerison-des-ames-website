@@ -11,8 +11,9 @@ import { leadership } from "./leadership";
 import { programs } from './programs'
 import { about } from './about'
 import { contact } from './contact'
+import { footerGallery } from './footerGallery'
 
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [blockContentType, categoryType, postType, authorType, heroSlider,gallery, ministries,leadership, programs, about, contact],
+  types: [blockContentType, categoryType, postType, authorType, heroSlider,gallery, ministries,leadership, programs, about, contact, footerGallery],
 }

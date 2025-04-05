@@ -75,7 +75,7 @@ const EventSliderArea = ({ ministriesData }: any) => {
           {eventsData.map((item: any) => (
             <div key={item.id} className="col-lg-4">
               <div className={`event-item-three ${item.item_bg}`}>
-                  <div className="image" style={{ width: "150px", height: "100px", position: "relative", overflow: "hidden" }}>
+                  <div className="image mx-auto" style={{ width: "300px", height: "150px", position: "relative", overflow: "hidden" }}>
                             <Image 
                                src={item.thumb} 
                                alt="Event" 

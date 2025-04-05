@@ -33,7 +33,7 @@ const Event = forwardRef((props: any, ref: React.Ref<HTMLDivElement>) => {
               <div className={`event-two-item ${item.item_bg}`}>
                 {/* Image Wrapper */}
                 <div
-                  className="image"
+                  className="image mx-auto"
                   style={{
                     width: "150px",
                     height: "100px",
