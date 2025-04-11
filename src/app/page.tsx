@@ -39,7 +39,8 @@ async function getHeroData() {
 }
 
 export default async function Index() {
-  const { heroData, leadershipData, programsData, footerGalleryData } = await getHeroData(); // ✅ Fetching data inside Server Component
+  const { heroData, leadershipData, programsData, footerGalleryData } =
+    await getHeroData(); // ✅ Fetching data inside Server Component
 
   return (
     <Wrapper>

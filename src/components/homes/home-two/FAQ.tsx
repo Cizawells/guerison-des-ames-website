@@ -44,7 +44,7 @@ const FAQ = ({ heroData }: any) => {
       <VideoPopup
         isVideoOpen={isVideoOpen}
         setIsVideoOpen={setIsVideoOpen}
-        videoId={"5NvSZ6jLoo"}
+        videoId={"qEa2R_xCCRs"}
       />
       {/* video modal end */}
     </>

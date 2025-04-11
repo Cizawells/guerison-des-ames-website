@@ -7,6 +7,8 @@ import { urlFor } from "../../../../sanity.image";
 
 const Event = forwardRef((props: any, ref: React.Ref<HTMLDivElement>) => {
   const { programsData = [] } = props; //
+
+  console.log("proooo", programsData)
   return (
     <div
       ref={ref} // Assign the ref to the component's container
@@ -31,6 +33,7 @@ const Event = forwardRef((props: any, ref: React.Ref<HTMLDivElement>) => {
           {programsData.map((item: any) => (
             <div key={item.name} className="col-lg-6">
               <div className={`event-two-item ${item.item_bg}`}>
+              {/* <div style={{}}> */}
                 {/* Image Wrapper */}
                 <div
                   className="image mx-auto"

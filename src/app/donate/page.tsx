@@ -3,24 +3,34 @@ import Wrapper from "@/layout/Wrapper";
 import { sanityClient } from "../../../sanity.client";
 
 export const metadata = {
-   title: "Guerison des ames church Nyakabiga",
- };
- 
+  title: "Guerison des ames church Nyakabiga",
+};
 
- async function getGalleryData() {
-    const query = `*[_type == "gallery"]`; // Fetch first gallery
-    const galleryData = await sanityClient.fetch(query, {}, { next: { revalidate: 10 } });
-  
-    return galleryData;
-  }
+async function getHeroData() {
+  const heroQuery = `*[_type == "heroSlider"][0]`; // Fetch first gallery
+  const query = `*[_type == "about"][0]`; // Fetch first gallery
 
-const index = () => {
-   
-   return (
-      <Wrapper>
-         <Donate />
-      </Wrapper>
-   )
+  const heroData = await sanityClient.fetch(
+    heroQuery,
+    {},
+    { next: { revalidate: 10 } }
+  );
+  const aboutusData = await sanityClient.fetch(
+    query,
+    {},
+    { next: { revalidate: 10 } }
+  );
+
+  return { heroData, aboutusData };
 }
 
-export default index
+const index = async () => {
+  const { heroData, aboutusData } = await getHeroData();
+  return (
+    <Wrapper>
+      <Donate heroData={heroData} aboutusData={aboutusData} />
+    </Wrapper>
+  );
+};
+
+export default index;

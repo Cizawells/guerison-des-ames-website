@@ -1,74 +1,118 @@
-import Breadcrumb from "@/components/common/Breadcrumb"
-import FooterOne from "@/layout/footers/FooterTwo"
-import HeaderOne from "@/layout/headers/HeaderOne"
-import DonateArea from "./DonateArea"
+"use client";
+import Breadcrumb from "@/components/common/Breadcrumb";
+import FooterOne from "@/layout/footers/FooterTwo";
+import HeaderOne from "@/layout/headers/HeaderOne";
+import DonateArea from "./DonateArea";
+import Link from "next/link";
+import Image, { StaticImageData } from "next/image";
+import Slider from "react-slick";
+import { urlFor } from "../../../../sanity.image";
+import aboutImg_1 from "@/assets/img/about/about-left1.jpg";
+import aboutImg_2 from "@/assets/img/about/about-left2.jpg";
+import aboutImg_3 from "@/assets/img/about/about-left3.jpg";
 
-const Donate = () => {
-   return (
-      <>
-         <HeaderOne style_1={true} style_2={true} />
-         <main>
-            <Breadcrumb page_title="Donate Now" page_list="Donate" style={false} />
-            {/* <DonateArea /> */}
-    <div className="container mt-4"  style={{
-    backgroundImage: "url('/building.jpeg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    minHeight: "100vh", // Ensure it covers the full viewport height
-    padding: "20px",
-    width:"100%"
-  }}>
-      {/* <h2 className="text-center section-title__subtitle mb-10">Donate & Support</h2> */}
-      <div className="row justify-content-center">
-          <div className="col-xl-6 col-lg-8 col-md-10">
-            <div className="section-title text-center mb-60">
-              <span className="section-title__subtitle mb-10" style={{fontSize: "25px"}}>
-                Donate & Support
-              </span>
-               
-           
-              {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati consectetur adipisicing</p> */}
+const about_img_data: any[] = [aboutImg_1, aboutImg_2, aboutImg_3, aboutImg_2];
+
+const Donate = ({ heroData, aboutusData }: any) => {
+  const settings = {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    fade: false,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 375,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+  return (
+    <>
+      <HeaderOne style_1={true} style_2={true} />
+      <main>
+        <Breadcrumb page_title="Donate Now" page_list="Donate" style={false} />
+        {/* <DonateArea /> */}
+        <div className="row gap-100 align-items-center py-5">
+          <div
+            className="col-xl-6"
+            style={
+              {
+                // backgroundImage: "url('/building.jpeg')",
+                // backgroundSize: "cover",
+                // backgroundPosition: "center",
+                // opacity: 0.4,
+              }
+            }
+          >
+            <div className="max-w-2xl text-center">
+              <h2 className="mt-6 text-xl font-bold text-gray-900">
+                Bank Deposits & Transfers
+              </h2>
+              <div className="mt-3 text-left text-gray-800">
+                <p>
+                  <strong>Banque de crédit du Burundi (BCB)</strong>, A/C
+                  Number: <span className="font-semibold">74974-58 (FBU)</span>,
+                  Tithes and Offerings
+                </p>
+                <p>
+                  <strong>Banque de crédit du Burundi (BCB)</strong>, A/C
+                  Number:{" "}
+                  <span className="font-semibold"> 02012090011 (DBU)</span>,
+                  Construction account
+                </p>
+              </div>
+
+              <h2 className="mt-6 text-xl font-bold text-gray-900">
+                Mobile transfers
+              </h2>
+              <div className="mt-3 text-left text-gray-800">
+                <p>
+                  <strong>Cash App (BCB)</strong>, Number:{" "}
+                  <span className="font-semibold">+1 (202) 590-8872 (USD)</span>
+                  , Irakoze Richard
+                </p>
+              </div>
+
+              <Link className="cr-btn btn--style-two" href="/contact">
+                Contact Us
+              </Link>
             </div>
           </div>
+          <div className="col-xl-6">
+            <Image
+              src="/building.jpeg"
+              alt="construction image"
+              width={500}
+              height={300}
+            />
+          </div>
         </div>
-      {/* <span className="section-title__subtitle mb-10">
-                Our Leadership team
-              </span> */}
-      
-      <div className="card p-3 mb-3" style={{ backgroundColor: "transparent", color: "white", width: "60%", marginRight: "auto", marginLeft: "auto" }}>
-        <h5>Bank Transfer</h5>
-        <ul className="list-group" style={{ backgroundColor: "transparent", color: "white"}}>
-          <li className="list-group-item" style={{ backgroundColor: "transparent", color: "white"}}>
-            <strong>Bank Name:</strong> BCB<br />
-            <strong>Account Name: </strong> Compte courant<br />
-            <strong>Account Number:</strong> 74974-58
-          </li>
-          <li className="list-group-item" style={{ backgroundColor: "transparent", color: "white"}}>
-            <strong>Bank Name:</strong> ABC Bank<br />
-            <strong>Account Name:</strong> Compte de construction<br />
-            <strong>Account Number:</strong> 02012090011
-          </li>
-        </ul>
-      </div>
-
-      <div className="card p-3 mb-3" style={{ backgroundColor: "transparent", color: "white", width: "60%", marginRight: "auto", marginLeft: "auto" }}>
-        <h5>Mobile Transfer</h5>
-        <ul className="list-group" style={{ backgroundColor: "transparent", color: "white"}}>
-          <li className="list-group-item" style={{ backgroundColor: "transparent", color: "white"}}>
-            <strong>CashApp:</strong> +1 (202) 590-8872 - Irakoze Richard
-          </li>
-        </ul>
-      </div>
-
-      <div className="text-center" style={{color: "white", fontWeight: "bold"}}>
-        <p>For any questions, please contact us at <strong>info@guerisondesames.org</strong></p>
-      </div>
-    </div>
-         </main>
-         <FooterOne />
-      </>
-   )
-}
+      </main>
+      <FooterOne footerGalleryData={heroData.footerGalleryData} />
+    </>
+  );
+};
 
 export default Donate;

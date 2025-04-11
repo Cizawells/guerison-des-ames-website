@@ -56,14 +56,23 @@ const HeroSection = ({ heroData, eventSectionRef }: any) => {
           transition={{ duration: 1, ease: "easeInOut" }}
         >
           {/* Dark Overlay for Better Readability */}
-          <div className="absolute inset-0 bg-black/60" style={{opacity: 5}}></div>
+          <div
+            className="absolute inset-0 bg-black/60"
+            style={{ opacity: 5 }}
+          ></div>
 
           {/* Centered Content (Text positioned absolutely to the motion.div) */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 responsive-padding">
-            <h4 className="text-4xl font-bold drop-shadow-lg" style={{fontSize: "50px"}}>
+            <h4
+              className="text-4xl font-bold drop-shadow-lg"
+              style={{ fontSize: "50px" }}
+            >
               Welcome to EMGA
             </h4>
-            <h6 className="text-4xl font-bold drop-shadow-lg" style={{fontSize: "25px"}}>
+            <h6
+              className="text-4xl font-bold drop-shadow-lg"
+              style={{ fontSize: "25px" }}
+            >
               <ReactTyped
                 strings={["we", "believe", "in", "Jesus", "our", "King"]}
                 typeSpeed={50}
