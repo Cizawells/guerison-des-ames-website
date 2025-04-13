@@ -31,9 +31,8 @@ const ChooseArea = ({ heroData }: any) => {
             <div className="col-lg-6">
               <div className="why-choose-content text-white rmb-65">
                 <div className="section-title mb-60">
-                  {/* <span className="section-title__subtitle mb-10">Why Choose Us</span> */}
                   <h2>
-                   Guérison <span>des ames</span>
+                    Guérison <span>des ames</span>
                   </h2>
                 </div>
 

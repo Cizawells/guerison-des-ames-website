@@ -63,12 +63,11 @@ const HeroSection = ({ heroData, eventSectionRef }: any) => {
 
           {/* Centered Content (Text positioned absolutely to the motion.div) */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 responsive-padding">
-            <h4
-              className="text-4xl font-bold drop-shadow-lg"
-              style={{ fontSize: "50px" }}
-            >
-              Welcome to EMGA
-            </h4>
+            <div className="section-title mb-60">
+              <h2>
+                Guérison <span>des ames</span>
+              </h2>
+            </div>
             <h6
               className="text-4xl font-bold drop-shadow-lg"
               style={{ fontSize: "25px" }}
