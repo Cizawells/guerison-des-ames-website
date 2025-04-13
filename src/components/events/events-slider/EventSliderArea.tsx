@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import { urlFor } from "../../../../sanity.image";
 
 const EventSliderArea = ({ ministriesData }: any) => {
-  console.log("ministries", ministriesData)
+  console.log("ministries", ministriesData);
   const eventsData = ministriesData.map((m: any, index: any) => ({
     id: index,
     thumb: urlFor(m?.ministryImage).url(),
@@ -73,45 +73,35 @@ const EventSliderArea = ({ ministriesData }: any) => {
       <div className="container">
         <Slider {...settings} className="events-slider-active row">
           {eventsData.map((item: any) => (
-            <div key={item.id} className="col-lg-4">
+            <div
+              key={item.id}
+              className="col-lg-4 "
+              style={{ minHeight: "100%" }}
+            >
               <div className={`event-item-three ${item.item_bg}`}>
-                  <div className="image mx-auto" style={{ width: "300px", height: "150px", position: "relative", overflow: "hidden" }}>
-                            <Image 
-                               src={item.thumb} 
-                               alt="Event" 
-                               fill 
-                               style={{ objectFit: "cover" }} 
-                            />
-                         </div>
-                {/* <div className="image">
+                <div
+                  className="image mx-auto"
+                  style={{
+                    width: "300px",
+                    height: "150px",
+                    position: "relative",
+                    overflow: "hidden",
+                  }}
+                >
                   <Image
                     src={item.thumb}
                     alt="Event"
-                    width={200}
-                    height={200}
+                    fill
+                    style={{ objectFit: "cover" }}
                   />
-                </div> */}
+                </div>
+
                 <div className="content">
                   <h4>
                     <Link href={`/event-details/${item.id}`}>{item.title}</Link>
                   </h4>
-                  {/* <ul className="blog-meta">
-                    <li>
-                      <i className="flaticon-time"></i>{" "}
-                      <Link href="#">{item.time}</Link>
-                    </li>
-                    <li>
-                      <i className="flaticon-map"></i>{" "}
-                      <Link href="#">{item.city}</Link>
-                    </li>
-                  </ul> */}
+
                   <p>{item.desc}</p>
-                  {/* <Link
-                    className="event-btn"
-                    href={`/event-details/${item.id}`}
-                  >
-                    Read more <i className="flaticon-chevron"></i>
-                  </Link> */}
                 </div>
               </div>
             </div>
