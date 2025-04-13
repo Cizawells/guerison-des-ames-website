@@ -50,13 +50,14 @@ const {
   copyright_text,
 } = footer_content;
 
-const FooterTwo = ({footerGalleryData}: any) => {
-    const gallery: any[] = footerGalleryData?.map((image: any, index: number) => ({
+const FooterTwo = ({ footerGalleryData }: any) => {
+  const gallery: any[] =
+    footerGalleryData?.map((image: any, index: number) => ({
       id: index + 1,
       url: urlFor(image?.image).url(), // Get image URL or fallback
     })) || [];
 
-    console.log("now gallery", gallery)
+  console.log("now gallery", gallery);
   return (
     <footer className="footer-area footer-area--two text-white pt-120">
       <div className="container">
@@ -99,8 +100,18 @@ const FooterTwo = ({footerGalleryData}: any) => {
                   <h4 className="widget-title">{gallery_title}</h4>
                   <div className="gallery-photos">
                     {gallery.map((gallery, index) => (
-                      <a key={index} href={gallery.url} target="_blank" rel="noopener noreferrer">
-                        <Image src={gallery?.url} alt="Gallery" width={50} height={50}/>
+                      <a
+                        key={index}
+                        href={gallery.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Image
+                          src={gallery?.url}
+                          alt="Gallery"
+                          width={50}
+                          height={50}
+                        />
                       </a>
                     ))}
                   </div>
@@ -114,11 +125,13 @@ const FooterTwo = ({footerGalleryData}: any) => {
       <div className="footer-bottom mt-70">
         <div className="container">
           <div className="footer-bottom__inner">
-            <div className="donate-by">
-              <span>Donate by :</span>
-              <Image src={donate} alt="Donate By" />
-            </div>
-            <div className="copyright">
+            <div
+              className="copyright"
+              style={{
+                width: "100%",
+                textAlign: "center",
+              }}
+            >
               <p>Copyright &copy; Guérison des ames 2025. All Right Reserved</p>
             </div>
           </div>

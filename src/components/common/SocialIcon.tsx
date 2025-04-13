@@ -1,14 +1,26 @@
-import Link from "next/link"
+import Link from "next/link";
 
 const CommonSocialIcon = () => {
-   return (
-      <>
-         <Link href="#"><i className="fab fa-facebook-f"></i></Link>
-         <Link href="#"><i className="fab fa-twitter"></i></Link>
-         <Link href="#"><i className="flaticon-google-plus-logo"></i></Link>
-         <Link href="#"><i className="flaticon-linkedin"></i></Link>
-      </>
-   )
-}
+  return (
+    <>
+      <Link
+        href="https://www.facebook.com/guerisondesamesnyakabigaSiege/?locale=fr_FR"
+        legacyBehavior
+      >
+        <a target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-facebook-f"></i>
+        </a>
+      </Link>
+      <Link
+        href="https://www.youtube.com/@e.m.guerisondesamesnyakabi3386"
+        legacyBehavior
+      >
+        <a target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-youtube"></i>
+        </a>
+      </Link>
+    </>
+  );
+};
 
-export default CommonSocialIcon
+export default CommonSocialIcon;

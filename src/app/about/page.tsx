@@ -8,7 +8,7 @@ export const metadata = {
 
 async function getAboutData() {
   const query = `*[_type == "about"][0]`; // Fetch first gallery
-  const leadershipQuery = `*[_type == "leadership"]`;
+  const leadershipQuery = `*[_type == "leadership"] | order(_createdAt desc)`;
   const footerGalleryQuery = `*[_type == "footerGallery"]`;
   const aboutusData = await sanityClient.fetch(
     query,
