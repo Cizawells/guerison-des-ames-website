@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import aboutImg_1 from "@/assets/img/about/about-left1.jpg";
 import aboutImg_2 from "@/assets/img/about/about-left2.jpg";
 import aboutImg_3 from "@/assets/img/about/about-left3.jpg";
-import aboutRightImg from "@/assets/img/about/about-right.jpg";
 import { urlFor } from "../../../../sanity.image";
 
 const about_img_data: StaticImageData[] = [
@@ -92,7 +91,7 @@ const About = ({ aboutusData }: any) => {
             <div className="about-us-content-part mb-50">
               <div className="section-title mb-50">
                 <span className="section-title__subtitle mb-10">
-                  {sub_title}
+                  {/* {sub_title} */}
                 </span>
                 <h2>{aboutusData.title}</h2>
               </div>

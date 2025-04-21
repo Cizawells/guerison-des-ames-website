@@ -5,8 +5,6 @@ import footer_data from "@/data/footerData";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
-import donate from "@/assets/img/footer/donate-by.png";
-
 import footerGallery_1 from "@/assets/img/footer/gallery-two1.jpg";
 import footerGallery_2 from "@/assets/img/footer/gallery-two2.jpg";
 import footerGallery_3 from "@/assets/img/footer/gallery-two3.jpg";
@@ -69,7 +67,7 @@ const FooterTwo = ({ footerGalleryData }: any) => {
                   <Image src={logo} alt="Logo" width={200} height={70} />
                 </Link>
               </div>
-              <p> {footer_about_text} </p>
+              {/* <p> {footer_about_text} </p> */}
               <div className="social-style-one pt-20">
                 <SocialIcon />
               </div>
