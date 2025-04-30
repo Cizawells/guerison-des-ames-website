@@ -23,7 +23,7 @@ const Event = forwardRef((props: any, ref: React.Ref<HTMLDivElement>) => {
                 Our Programs
               </span>
               <h3>
-                Join us in our different <span>Programs</span>
+                <span>Join us</span>
               </h3>
             </div>
           </div>
@@ -50,6 +50,7 @@ const Event = forwardRef((props: any, ref: React.Ref<HTMLDivElement>) => {
                 alignItems: "center",
                 padding: "10px",
               }}
+              key={item.name}
             >
               <div
                 className="image mx-auto"

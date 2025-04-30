@@ -18,7 +18,7 @@ const Volunteer = ({ style, leadershipData = [] }: any) => {
               </span>
               {style ? (
                 <h3>
-                  Our <span> Pastors</span>
+                  <span> Pastors</span>
                 </h3>
               ) : (
                 <h2>
