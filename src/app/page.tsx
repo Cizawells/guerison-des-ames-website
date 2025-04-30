@@ -58,7 +58,6 @@ export default async function Index() {
     causesData,
   } = await getHeroData(); // ✅ Fetching data inside Server Component
 
-  console.log("causeee", causesData);
   return (
     <Wrapper>
       <ToastContainer position="top-center" autoClose={3000} />

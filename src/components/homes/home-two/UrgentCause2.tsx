@@ -35,7 +35,7 @@ const UrgentCause = ({ causesData }: any) => {
             </div>
           </div>
 
-          {causesData.map((item: any) => (
+          {causesData?.map((item: any) => (
             <div key={item.ministryTitle} className="col-xl-3 col-md-6">
               <div className="cause-item">
                 <div
