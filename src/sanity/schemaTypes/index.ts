@@ -1,19 +1,33 @@
-import { type SchemaTypeDefinition } from 'sanity'
+import { type SchemaTypeDefinition } from "sanity";
 
-import {blockContentType} from './blockContentType'
-import {categoryType} from './categoryType'
-import {postType} from './postType'
-import {authorType} from './authorType'
+import { blockContentType } from "./blockContentType";
+import { categoryType } from "./categoryType";
+import { postType } from "./postType";
+import { authorType } from "./authorType";
 import { heroSlider } from "./homePageType";
 import { gallery } from "./gallery";
 import { ministries } from "./ministries";
 import { leadership } from "./leadership";
-import { programs } from './programs'
-import { about } from './about'
-import { contact } from './contact'
-import { footerGallery } from './footerGallery'
-
+import { programs } from "./programs";
+import { about } from "./about";
+import { contact } from "./contact";
+import { footerGallery } from "./footerGallery";
+import { causes } from "./causes";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [blockContentType, categoryType, postType, authorType, heroSlider,gallery, ministries,leadership, programs, about, contact, footerGallery],
-}
+  types: [
+    blockContentType,
+    categoryType,
+    postType,
+    authorType,
+    heroSlider,
+    gallery,
+    ministries,
+    leadership,
+    programs,
+    about,
+    contact,
+    footerGallery,
+    causes,
+  ],
+};

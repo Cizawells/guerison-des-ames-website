@@ -9,6 +9,7 @@ import FAQ from "./FAQ";
 import HeroArea from "./HeroArea";
 import Testimonial from "./Testimonial";
 import Volunteer from "./Volunteer";
+import UrgentCause from "./UrgentCause2";
 
 const HomeTwo = (props: any) => {
   const eventSectionRef = useRef<HTMLDivElement>(null);
@@ -19,7 +20,7 @@ const HomeTwo = (props: any) => {
         <HeroArea heroData={props.heroData} eventSectionRef={eventSectionRef} />
         <ChooseArea heroData={props.heroData} />
         {/* <Features style={true} /> */}
-        {/* <UrgentCause /> */}
+        <UrgentCause causesData={props.causesData} />
         {/* <About /> */}
         {/* <OurCause /> */}
         {/* <Counter /> */}
