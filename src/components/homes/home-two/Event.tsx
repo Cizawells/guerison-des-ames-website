@@ -8,7 +8,7 @@ import { urlFor } from "../../../../sanity.image";
 const Event = forwardRef((props: any, ref: React.Ref<HTMLDivElement>) => {
   const { programsData = [] } = props; //
 
-  console.log("proooo", programsData)
+  console.log("proooo", programsData);
   return (
     <div
       ref={ref} // Assign the ref to the component's container
@@ -29,40 +29,55 @@ const Event = forwardRef((props: any, ref: React.Ref<HTMLDivElement>) => {
           </div>
         </div>
 
-        <div className="row justify-content-center">
+        <div
+          className=""
+          style={{
+            width: "100%",
+            padding: "10px",
+            display: "flex",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            rowGap: "15px",
+          }}
+        >
           {programsData.map((item: any) => (
-            <div key={item.name} className="col-lg-6">
-              <div className={`event-two-item ${item.item_bg}`}>
-              {/* <div style={{}}> */}
-                {/* Image Wrapper */}
-                <div
-                  className="image mx-auto"
-                  style={{
-                    width: "150px",
-                    height: "100px",
-                    position: "relative",
-                    overflow: "hidden",
-                  }}
-                >
-                  <Image
-                    src={urlFor(item.image).url()}
-                    alt="Event"
-                    fill
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                width: "45%",
+                backgroundColor: "white",
+                alignItems: "center",
+                padding: "10px",
+              }}
+            >
+              <div
+                className="image mx-auto"
+                style={{
+                  width: "45%",
+                  height: "100px",
+                  position: "relative",
+                  overflow: "hidden",
+                }}
+              >
+                <Image
+                  src={urlFor(item.image).url()}
+                  alt="Event"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
 
-                {/* Content */}
-                <div className="content">
-                  <h5>
-                    <Link href="/event-details">{item.name}</Link>
-                  </h5>
-                  <ul>
-                    <li>
-                      <i className="flaticon-time"></i> {item.time}
-                    </li>
-                  </ul>
-                </div>
+              {/* Content */}
+              <div className="" style={{ width: "45%" }}>
+                <h5>
+                  <Link href="/event-details">{item.name}</Link>
+                </h5>
+                <ul>
+                  <li>
+                    <i className="flaticon-time"></i> {item.time}
+                  </li>
+                </ul>
               </div>
             </div>
           ))}

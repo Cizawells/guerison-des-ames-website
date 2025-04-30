@@ -14,7 +14,7 @@ const faq_data = [
     page: "home_2",
     question: "Where is Guerison des ames Church located?",
     answer:
-      "Guerison des ames Church is located in Kigali, Kimironko, KG 11 Ave 113. Find us on the map",
+      "Guerison des ames Church is located in Bujumbura, Nyakabiga. Find us on the map",
     showAnswer: false,
   },
 
