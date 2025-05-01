@@ -53,10 +53,10 @@ const footer_data: DataType[] = [
     page: "home_2",
     widget_title: "Worship with us",
     footer_link: [
-      { link: "#", link_title: "Sunday 09AM - 12AM" },
+      { link: "#", link_title: "Sunday 09AM - 12PM" },
+      { link: "#", link_title: "Friday 09AM - 05PM" },
       { link: "#", link_title: "Thursday 05PM - 07PM" },
-      { link: "#", link_title: "Friday 00AM - 00AM" },
-      { link: "#", link_title: "Saturday 00AM - 00AM" },
+      { link: "#", link_title: "Tuesday 05PM - 07PM" },
     ],
   },
   {
