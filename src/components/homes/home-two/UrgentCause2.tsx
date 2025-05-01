@@ -24,7 +24,7 @@ const UrgentCause = ({ causesData }: any) => {
                   Urgent cause
                 </span>
                 <h3>
-                  We help more than <span>9k children</span> every year
+                  We help many&nbsp;<span> children</span> every year
                 </h3>
               </div>
               {/* <p>
