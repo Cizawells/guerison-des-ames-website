@@ -32,7 +32,7 @@ const ChooseArea = ({ heroData }: any) => {
               <div className="why-choose-content text-white rmb-65">
                 <div className="section-title mb-60">
                   <h2>
-                    Guérison <span>des ames</span>
+                    Guérison&nbsp; <span>des ames</span>
                   </h2>
                 </div>
 

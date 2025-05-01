@@ -65,7 +65,7 @@ const HeroSection = ({ heroData, eventSectionRef }: any) => {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-10 responsive-padding">
             <div className="section-title mb-60">
               <h2>
-                Guérison <span>des ames</span>
+                Guérison&nbsp;<span> des ames</span>
               </h2>
             </div>
             <h6
