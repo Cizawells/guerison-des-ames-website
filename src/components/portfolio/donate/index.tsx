@@ -77,9 +77,8 @@ const Donate = ({ heroData, aboutusData }: any) => {
                   Tithes and Offerings
                 </p>
                 <p>
-                  <strong>Banque de crédit du Burundi (BCB)</strong>, A/C
-                  Number:{" "}
-                  <span className="font-semibold"> 02012090011 (DBU)</span>,
+                  <strong>Inyenyeri Microfinance</strong>, A/C Number:{" "}
+                  <span className="font-semibold"> 445/1 (FBU)</span>,
                   Construction account
                 </p>
               </div>
