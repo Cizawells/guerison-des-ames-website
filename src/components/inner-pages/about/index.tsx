@@ -6,11 +6,13 @@ import About from "@/components/homes/home-two/About";
 import Testimonial from "@/components/homes/home-two/Testimonial";
 import CtaArea from "@/components/homes/home-two/CtaArea";
 import Volunteer from "@/components/homes/home-two/Volunteer";
+import UrgentCause from "@/components/homes/home-two/UrgentCause2";
 
 const InnerAbout = ({
   aboutusData,
   leadershipData,
   footerGalleryData,
+  causesData,
 }: any) => {
   return (
     <>
@@ -19,7 +21,9 @@ const InnerAbout = ({
         <Breadcrumb page_title="About Us" page_list="About" style={true} />
         {/* <Brand style={true} /> */}
         <About aboutusData={aboutusData} />
+        <UrgentCause causesData={causesData} />
         <Volunteer style={true} leadershipData={leadershipData} />
+
         {/* <Features /> */}
         {/* <Volunteer style={true} /> */}
         {/* <Testimonial style={false} /> */}

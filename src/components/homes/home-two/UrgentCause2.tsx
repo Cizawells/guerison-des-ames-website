@@ -13,7 +13,7 @@ const UrgentCause = ({ causesData }: any) => {
   return (
     <div
       className="urgent-cause-area overlay bgs-cover pt-120 pb-90 rel z-1"
-      style={{ backgroundImage: `url(/assets/img/causes/urgent-causes.jpg)` }}
+      style={{ backgroundImage: `url(/1.jpg)` }}
     >
       <div className="container container-1370">
         <div className="row gap-40">
@@ -27,11 +27,11 @@ const UrgentCause = ({ causesData }: any) => {
                   We help more than <span>9k children</span> every year
                 </h3>
               </div>
-              <p>
+              {/* <p>
                 BigHearts is the largest global crowdfunding community
                 connecting nonprofits, donors, and companies in nearly every
                 country. We help nonprofits from
-              </p>
+              </p> */}
             </div>
           </div>
 
@@ -40,16 +40,17 @@ const UrgentCause = ({ causesData }: any) => {
               <div className="cause-item">
                 <div
                   className="image"
-                  style={{ width: "280px", height: "250px" }}
+                  style={{ width: "280px", height: "180px" }}
                 >
                   <Image
                     src={urlFor(item.image).url()}
                     alt="Cause"
-                    width={300}
-                    height={250}
+                    width={280}
+                    layout="responsive"
+                    height={180}
                   />
                 </div>
-                <div className="content">
+                <div className="content" style={{}}>
                   <h5>
                     <Link href="/causes">{item.title}</Link>
                   </h5>
@@ -65,7 +66,7 @@ const UrgentCause = ({ causesData }: any) => {
                     ></div>
                   </div> */}
                   <div className="cause-btn">
-                    <Link className={`cr-btn ${item.btn_bg}`} href="#">
+                    <Link className={`cr-btn ${item.btn_bg}`} href="/donate">
                       Donation now
                     </Link>
                   </div>
