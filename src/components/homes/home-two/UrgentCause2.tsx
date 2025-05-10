@@ -21,11 +21,9 @@ const UrgentCause = ({ causesData }: any) => {
             <div className="urgent-cause-content mb-30 rmb-65">
               <div className="section-title mb-30">
                 <span className="section-title__subtitle mb-30">
-                  Urgent cause
+                  Urgent causes
                 </span>
-                <h3>
-                  We help many&nbsp;<span> children</span> every year
-                </h3>
+                <h3>We help many&nbsp; people every year</h3>
               </div>
               {/* <p>
                 BigHearts is the largest global crowdfunding community
@@ -52,7 +50,7 @@ const UrgentCause = ({ causesData }: any) => {
                 </div>
                 <div className="content" style={{}}>
                   <h5>
-                    <Link href="/causes">{item.title}</Link>
+                    <div>{item.title}</div>
                   </h5>
                   <p>{item.description}</p>
                   <div className="cause-price">
