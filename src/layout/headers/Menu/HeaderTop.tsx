@@ -15,7 +15,7 @@ const HeaderTop = ({ style }: any) => {
                     Shalom - <Link href="callto:333-444555">+25776720000</Link>
                   </b>
                 </li>
-                <li>Bujumbura, Nyagakabiga</li>
+                <li>Bujumbura, Nyakabiga</li>
               </>
             ) : (
               <>
