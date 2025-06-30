@@ -1,15 +1,50 @@
+@media (max-width: 1920px) {
+  .responsive-padding {
+    padding-top: 25%;
+  }
+}
 
-  
- 
-  @media (max-width: 1920px) {
-    .responsive-padding {
-      padding-top: 25%;
-    }
+@media screen and (min-width: 768px) {
+  .program-card {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    background-color: white;
+    align-items: center;
+    padding: 10px;
   }
-  
-  @media (max-width: 480px) {
-    .responsive-padding {
-        padding-top: 60%;
-    }
+
+  .program-card .image {
+    width: "45%";
+    height: "100px";
+    position: "relative";
+    overflow: "hidden";
   }
-  
+
+  .program-card .content {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-padding {
+    padding-top: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .program-card {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .program-card .image {
+    width: 100% !important;
+    height: 180px !important;
+  }
+
+  .program-card > div:last-child {
+    width: 100% !important;
+    text-align: center;
+  }
+}

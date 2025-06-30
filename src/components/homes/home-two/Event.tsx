@@ -30,7 +30,6 @@ const Event = forwardRef((props: any, ref: React.Ref<HTMLDivElement>) => {
         </div>
 
         <div
-          className=""
           style={{
             width: "100%",
             padding: "10px",
@@ -50,6 +49,7 @@ const Event = forwardRef((props: any, ref: React.Ref<HTMLDivElement>) => {
                 alignItems: "center",
                 padding: "10px",
               }}
+              className="program-card"
               key={item.name}
             >
               <div

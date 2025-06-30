@@ -8,8 +8,8 @@ import Event from "./Event";
 import FAQ from "./FAQ";
 import HeroArea from "./HeroArea";
 import Testimonial from "./Testimonial";
-import Volunteer from "./Volunteer";
 import UrgentCause from "./UrgentCause2";
+import Volunteer from "./Volunteer";
 
 const HomeTwo = (props: any) => {
   const eventSectionRef = useRef<HTMLDivElement>(null);
